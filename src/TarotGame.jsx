@@ -26,7 +26,6 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", description: "Liberté, nouveauté, imprévu." }
 ];
 
-
 function getRandomCards(count) {
   const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
@@ -37,36 +36,47 @@ export default function TarotGame() {
   const [tirage, setTirage] = useState([]);
 
   return (
-    <div style={{ padding: 20, textAlign: "center" }}>
-      <h1>🎴 Tirage du Tarot de Marseille</h1>
-      <div>
-        {[1, 2, 3, 4, 5].map(n => (
-          <button key={n} onClick={() => setCount(n)}>
-            {n} carte{n > 1 ? "s" : ""}
-          </button>
-        ))}
-      </div>
-      <div style={{ marginTop: 15 }}>
-        <button
-  onClick={() => setTirage(getRandomCards(count))}
-  className="tirer"
->
-  🔮 Tirer les cartes
-</button>
-      </div>
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", marginTop: 30 }}>
-        {tirage.map((card, i) => (
-          <div key={i} className="card">
-            <img
-              src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
-              alt={card.name}
-              onError={(e) => (e.target.style.display = "none")}
-            />
-            <h4>{card.name}</h4>
-            <p>{card.description}</p>
+    <div className="page">
+      <header className="global-header">
+        <div className="header-content">
+          <span className="logo">🎴</span>
+          <h1>Tirage du Tarot de Marseille</h1>
+        </div>
+      </header>
+
+      <main className="main-box">
+        <div className="selection-section">
+          <p>Sélectionnez le nombre de carte que vous voulez tirer</p>
+          <div className="btn-group">
+            {[1, 2, 3, 4, 5].map(n => (
+              <button key={n} onClick={() => setCount(n)}>
+                {n} carte{n > 1 ? "s" : ""}
+              </button>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+
+        <div className="tirage-section">
+          <p>Cliquez sur le bouton pour lancer votre tirage</p>
+          <button onClick={() => setTirage(getRandomCards(count))} className="tirer">
+            🔮 Tirer les cartes
+          </button>
+        </div>
+
+        <div className="tirage-cards">
+          {tirage.map((card, i) => (
+            <div key={i} className="card">
+              <img
+                src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
+                alt={card.name}
+                onError={(e) => (e.target.style.display = "none")}
+              />
+              <h4>{card.name}</h4>
+              <p>{card.description}</p>
+            </div>
+          ))}
+        </div>
+      </main>
     </div>
   );
 }

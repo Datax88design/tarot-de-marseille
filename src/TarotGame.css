@@ -1,54 +1,90 @@
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
-h1 {
-  font-size: 2em;
-  margin-top: 30px;
+.page {
+  padding: 0rem;
 }
 
-button {
-  background-color: #007aff;
-  color: white;
+.global-header {
+  background-color: #fff;
+  padding: 0rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-box {
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.selection-section,
+.tirage-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-group button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border: none;
   border-radius: 8px;
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 1em;
+  background-color: #eeee
+;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-button:hover {
-  background-color: #005bb5;
+.btn-group button:hover {
+  background-color: #ddd;
 }
 
-button.tirer {
-  background-color: #000;
+.tirer {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #7e6702;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tirer:hover {
+  background-color: #b38f00;
 }
 
-button.tirer:hover {
-  background-color: #333;
+.tirage-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  margin: 15px;
-  padding: 15px;
-  max-width: 200px;
+  max-width: 150px;
   text-align: center;
 }
 
 .card img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
