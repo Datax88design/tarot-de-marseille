@@ -4,13 +4,13 @@ import "./TarotGame.css";
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", description: "Bon présage amoureux, promotion et spiritualité." },
   { name: "La Papesse", image: "la_papesse.jpg", description: "Vie de couple sincère, réussite par la sagesse." },
-  { name: "L'Impératrice", image: "limperatrice.jpg", description: "Féminité, amour physique, confiance en soi." },
-  { name: "L'Empereur", image: "lemperieur.jpg", description: "Stabilité, engagement sérieux, leadership." },
+  { name: "L'Impératrice", image: "l_imperatrice.jpg", description: "Féminité, amour physique, confiance en soi." },
+  { name: "L'Empereur", image: "le_empereur.jpg", description: "Stabilité, engagement sérieux, leadership." },
   { name: "Le Pape", image: "le_pape.jpg", description: "Amour spirituel, période prospère, guide." },
-  { name: "L'Amoureux", image: "lamoureux.jpg", description: "Hésitation, danger financier, influençable." },
+  { name: "L'Amoureux", image: "l_amoureux.jpg", description: "Hésitation, danger financier, influençable." },
   { name: "Le Chariot", image: "le_chariot.jpg", description: "Succès amoureux et pro, évolution rapide." },
   { name: "La Justice", image: "la_justice.jpg", description: "Rigueur, valeurs solides, règles claires." },
-  { name: "L'Hermite", image: "lhermite.jpg", description: "Patience, couple stable, réflexion positive." },
+  { name: "L'Hermite", image: "l_hermite.jpg", description: "Patience, couple stable, réflexion positive." },
   { name: "La Roue de Fortune", image: "la_roue_de_fortune.jpg", description: "Changement soudain, positif ou négatif." },
   { name: "La Force", image: "la_force.jpg", description: "Relation forte, foi au travail, maîtrise de soi." },
   { name: "Le Pendu", image: "le_pendu.jpg", description: "Blocage, double relation, sacrifice." },
@@ -18,13 +18,14 @@ const tarotCards = [
   { name: "Tempérance", image: "temperance.jpg", description: "Équilibre, travail en équipe, harmonie." },
   { name: "Le Diable", image: "le_diable.jpg", description: "Passion toxique, manipulation, tentation." },
   { name: "La Maison Dieu", image: "la_maison_dieu.jpg", description: "Choc, fin de cycle, révélation." },
-  { name: "L'Étoile", image: "letoile.jpg", description: "Espoir, tendresse, inspiration." },
+  { name: "L'Étoile", image: "l_etoile.jpg", description: "Espoir, tendresse, inspiration." },
   { name: "La Lune", image: "la_lune.jpg", description: "Illusions, rêve, intuition, secret." },
   { name: "Le Soleil", image: "le_soleil.jpg", description: "Réussite, joie, couple rayonnant." },
   { name: "Le Jugement", image: "le_jugement.jpg", description: "Renaissance, surprise, annonce." },
   { name: "Le Monde", image: "le_monde.jpg", description: "Accomplissement, succès, bonheur total." },
   { name: "Le Mat", image: "le_mat.jpg", description: "Liberté, nouveauté, imprévu." }
 ];
+
 
 function getRandomCards(count) {
   const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
@@ -57,7 +58,7 @@ export default function TarotGame() {
         {tirage.map((card, i) => (
           <div key={i} className="card">
             <img
-              src={process.env.PUBLIC_URL + "/cartes/" + card.image}
+              src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
               alt={card.name}
               onError={(e) => (e.target.style.display = "none")}
             />
