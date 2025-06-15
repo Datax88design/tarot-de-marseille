@@ -1,11 +1,19 @@
-import { useState } from "react";
-import TarotGame from "./TarotGame";
-import Login from "./Login";
+import React, { useState } from 'react';
+import TarotGame from './TarotGame';
+import Login from './Login';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  return loggedIn ? <TarotGame /> : <Login onLogin={setLoggedIn} />;
+  return (
+    <div>
+      {isAuthenticated ? (
+        <TarotGame />
+      ) : (
+        <Login onLogin={() => setIsAuthenticated(true)} />
+      )}
+    </div>
+  );
 }
 
 export default App;
