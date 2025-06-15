@@ -1,10 +1,16 @@
-/* 🌐 Structure générale */
+/* TarotGame.css - avec slide, flip tactile, responsive, date, mode sombre, toggle switch */
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, sans-serif;
   margin: 0;
-  background-color: #f0f2f5;
+  background: #f0f2f5;
   color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
 }
 
 .page {
@@ -12,53 +18,129 @@ body {
 }
 
 .global-header {
-  background-color: #fff;
+  background: #fff;
   padding: 0rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
   text-align: center;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+body.dark .global-header {
+  background: #2c2c2c;
 }
 
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
+.theme-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.theme-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.theme-switch::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+body.dark .theme-switch {
+  background: #666;
+}
+
+body.dark .theme-switch::before {
+  transform: translateX(20px);
+}
+
 .main-box {
-  background-color: white;
+  background: white;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   overflow-x: hidden;
-  box-sizing: border-box;
+  transition: background-color 0.3s;
+}
+
+body.dark .main-box {
+  background: #2a2a2a;
+}
+
+.today {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+body.dark .today {
+  color: #aaa;
+}
+
+.controls-section {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.controls-section.with-border {
+  border-bottom: 2px solid #ddd;
+}
+
+body.dark .controls-section.with-border {
+  border-color: #444;
 }
 
 .selection-section,
 .tirage-section {
   margin-bottom: 2rem;
-  text-align: center;
 }
 
-/* 🎛 Boutons */
 .btn-group button,
-.tirer,
-.reset {
+.tirer {
   margin: 0.3rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  background-color: #eee;
   transition: background-color 0.3s ease;
 }
 
-.btn-group button {
-  background-color: #eee;
+body.dark .btn-group button,
+body.dark .tirer {
+  background-color: #444;
+  color: #fff;
 }
+
 .btn-group button:hover {
   background-color: #ddd;
 }
@@ -67,50 +149,40 @@ body {
   background-color: #c4a000;
   color: white;
 }
+
 .tirer:hover {
   background-color: #b38f00;
 }
 
-.reset {
-  background-color: #888;
-  color: white;
-  margin-top: 1rem;
-}
-.reset:hover {
-  background-color: #666;
+.display-section {
+  padding-top: 1rem;
 }
 
-/* 🃏 Cartes */
-.tirage-cards {
+.display-section .tirage-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 2rem;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 .card {
   width: 130px;
   height: 230px;
   perspective: 1000px;
-  animation: fadeInUp 0.5s forwards;
+  animation: slideInCard 0.6s ease forwards;
   transition: transform 0.3s ease;
 }
-.card:hover {
-  transform: scale(1.05);
+
+.card.flipped .inner {
+  transform: rotateY(180deg);
 }
 
 .inner {
   width: 100%;
   height: 100%;
   position: relative;
-  transition: transform 0.8s;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d;
-}
-.card:hover .inner {
-  transform: rotateY(180deg);
 }
 
 .front,
@@ -122,11 +194,17 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background-color: white;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: background-color 0.3s;
+}
+
+body.dark .front,
+body.dark .back {
+  background: #3a3a3a;
 }
 
 .front img {
@@ -142,33 +220,20 @@ body {
   text-align: center;
 }
 
-/* ✨ Apparition animée */
-@keyframes fadeInUp {
+@keyframes slideInCard {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(40px) rotateZ(4deg);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0) rotateZ(0);
   }
 }
 
-/* 📱 Responsive */
 @media (max-width: 600px) {
   .main-box {
     padding: 1rem;
-  }
-
-  .btn-group button,
-  .tirer,
-  .reset {
-    width: 100%;
-    margin: 0.4rem 0;
-  }
-
-  .tirage-cards {
-    gap: 1rem;
   }
 
   .card {
@@ -177,9 +242,7 @@ body {
   }
 
   .front img {
-    width: 100%;
     height: 100%;
-    object-fit: contain;
   }
 
   .back {
@@ -187,12 +250,8 @@ body {
     padding: 0.5rem;
   }
 
-  .global-header h1 {
-    font-size: 1.2rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    gap: 0.5rem;
+  .btn-group button,
+  .tirer {
+    width: 100%;
   }
 }

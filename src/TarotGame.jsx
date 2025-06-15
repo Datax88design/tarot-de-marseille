@@ -34,6 +34,19 @@ function getRandomCards(count) {
 export default function TarotGame() {
   const [count, setCount] = useState(1);
   const [tirage, setTirage] = useState([]);
+  const [flipped, setFlipped] = useState([]);
+
+  const handleFlip = (index) => {
+    const updated = [...flipped];
+    updated[index] = !updated[index];
+    setFlipped(updated);
+  };
+
+  const tirer = () => {
+    const result = getRandomCards(count);
+    setTirage(result);
+    setFlipped(Array(result.length).fill(false));
+  };
 
   return (
     <div className="page">
@@ -45,47 +58,54 @@ export default function TarotGame() {
       </header>
 
       <main className="main-box">
-        <div className="selection-section">
-          <p>Sélectionnez le nombre de carte que vous voulez tirer</p>
-          <div className="btn-group">
-            {[1, 2, 3, 4, 5].map(n => (
-              <button key={n} onClick={() => setCount(n)}>
-                {n} carte{n > 1 ? "s" : ""}
-              </button>
-            ))}
+        <p className="today">Tirage du {new Date().toLocaleDateString()}</p>
+
+        <section className={`controls-section ${tirage.length > 0 ? "with-border" : ""}`}>
+          <div className="selection-section">
+            <p>Sélectionnez le nombre de cartes à tirer</p>
+            <div className="btn-group">
+              {[1, 2, 3, 4, 5].map((n) => (
+                <button key={n} onClick={() => setCount(n)}>
+                  {n} carte{n > 1 ? "s" : ""}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="tirage-section">
-          <p>Cliquez sur le bouton pour lancer votre tirage</p>
-          <button onClick={() => setTirage(getRandomCards(count))} className="tirer">
-            🔮 Tirer les cartes
-          </button>
-        </div>
+          <div className="tirage-section">
+            <p>Cliquez pour lancer votre tirage</p>
+            <button onClick={tirer} className="tirer">
+              🔮 Tirer les cartes
+            </button>
+          </div>
+        </section>
 
-        <div className="tirage-cards">
-          {tirage.map((card, i) => (
-            <div
-              key={i}
-              className="card"
-              style={{ animationDelay: `${i * 0.2}s` }}
-            >
-              <div className="inner">
-                <div className="front">
-                  <img
-                    src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
-                    alt={card.name}
-                    onError={(e) => (e.target.style.display = "none")}
-                  />
-                </div>
-                <div className="back">
-                  <h4>{card.name}</h4>
-                  <p>{card.description}</p>
+        <section className="display-section">
+          <div className="tirage-cards">
+            {tirage.map((card, i) => (
+              <div
+                key={i}
+                className={`card ${flipped[i] ? "flipped" : ""}`}
+                onClick={() => handleFlip(i)}
+                style={{ animationDelay: `${i * 0.2}s` }}
+              >
+                <div className="inner">
+                  <div className="front">
+                    <img
+                      src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
+                      alt={card.name}
+                      onError={(e) => (e.target.style.display = "none")}
+                    />
+                  </div>
+                  <div className="back">
+                    <h4>{card.name}</h4>
+                    <p>{card.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );
