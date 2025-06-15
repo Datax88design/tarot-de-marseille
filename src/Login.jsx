@@ -7,7 +7,7 @@ const Login = ({ onLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password === 'tarot2025') {
-      onLogin(); // autorise l'accès
+      onLogin();
     } else {
       setError('Mot de passe incorrect.');
     }
