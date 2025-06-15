@@ -65,14 +65,24 @@ export default function TarotGame() {
 
         <div className="tirage-cards">
           {tirage.map((card, i) => (
-            <div key={i} className="card">
-              <img
-                src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
-                alt={card.name}
-                onError={(e) => (e.target.style.display = "none")}
-              />
-              <h4>{card.name}</h4>
-              <p>{card.description}</p>
+            <div
+              key={i}
+              className="card"
+              style={{ animationDelay: `${i * 0.2}s` }}
+            >
+              <div className="inner">
+                <div className="front">
+                  <img
+                    src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
+                    alt={card.name}
+                    onError={(e) => (e.target.style.display = "none")}
+                  />
+                </div>
+                <div className="back">
+                  <h4>{card.name}</h4>
+                  <p>{card.description}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+/* 🌐 Structure générale */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -27,11 +28,13 @@ body {
 
 .main-box {
   background-color: white;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .selection-section,
@@ -40,51 +43,156 @@ body {
   text-align: center;
 }
 
-.btn-group button {
+/* 🎛 Boutons */
+.btn-group button,
+.tirer,
+.reset {
   margin: 0.3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
-  background-color: #eeee
-;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.btn-group button {
+  background-color: #eee;
 }
 .btn-group button:hover {
   background-color: #ddd;
 }
 
 .tirer {
-  padding: 0.6rem 1.2rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #7e6702;
+  background-color: #c4a000;
   color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 .tirer:hover {
   background-color: #b38f00;
 }
 
+.reset {
+  background-color: #888;
+  color: white;
+  margin-top: 1rem;
+}
+.reset:hover {
+  background-color: #666;
+}
+
+/* 🃏 Cartes */
 .tirage-cards {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: wrap;
   margin-top: 2rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .card {
-  max-width: 150px;
+  width: 130px;
+  height: 230px;
+  perspective: 1000px;
+  animation: fadeInUp 0.5s forwards;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  padding: 10px;
   text-align: center;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+/* ✨ Apparition animée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .main-box {
+    padding: 1rem;
+  }
+
+  .btn-group button,
+  .tirer,
+  .reset {
+    width: 100%;
+    margin: 0.4rem 0;
+  }
+
+  .tirage-cards {
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100px;
+    height: 170px;
+  }
+
+  .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .back {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .global-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
