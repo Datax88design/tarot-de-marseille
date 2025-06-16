@@ -1,9 +1,10 @@
-import TarotGame from './TarotGame';
+import TarotGameV2 from "./TarotGameV2";
+import "./TarotGameV2.css";
 
 function App() {
   return (
     <div className="App">
-      <TarotGame />
+      <TarotGameV2 />
     </div>
   );
 }
