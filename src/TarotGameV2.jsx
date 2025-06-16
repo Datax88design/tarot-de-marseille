@@ -1,7 +1,6 @@
 import { useState } from "react";
 import './TarotGameV2.css';
 
-
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", description: "Bon présage amoureux, promotion et spiritualité." },
   { name: "La Papesse", image: "la_papesse.jpg", description: "Vie de couple sincère, réussite par la sagesse." },
@@ -28,6 +27,10 @@ const tarotCards = [
 ];
 
 
+function getToday() {
+  return new Date().toLocaleDateString("fr-FR");
+}
+
 function getRandomCards(count) {
   return [...tarotCards].sort(() => 0.5 - Math.random()).slice(0, count);
 }
@@ -50,58 +53,62 @@ export default function TarotGameV2() {
   };
 
   return (
-    <div className="container">
-      <header className="header">
-        <span className="icon">🎴</span>
+    <div className="page">
+      <header className="global-header">
+        <img src="/favicon.ico" alt="logo" width={28} height={28} />
         <h1>Tirage du Tarot de Marseille</h1>
-        <p className="date">Tirage du {new Date().toLocaleDateString()}</p>
       </header>
 
-      <section className="controls">
-        <p>Sélectionnez le nombre de cartes à tirer</p>
-        <div className="button-grid">
-          {[1, 2, 3, 4, 5].map(n => (
-            <button
-              key={n}
-              onClick={() => setCount(n)}
-              className={count === n ? "active" : ""}
-            >
-              {n} carte{n > 1 ? "s" : ""}
-            </button>
-          ))}
-        </div>
-        <button className="draw-button" onClick={tirer}>
-          🔮 Tirer les cartes
-        </button>
-      </section>
+      <main className="main-box">
+        <p className="today">Tirage du {getToday()}</p>
 
-      {tirage.length > 0 && (
-        <hr className="separator" />
-      )}
-
-      <section className="cards">
-        {tirage.map((card, i) => (
-          <div
-            className={`card ${flipped[i] ? "flipped" : ""}`}
-            key={i}
-            onClick={() => handleFlip(i)}
-            style={{ animationDelay: `${i * 0.2}s` }}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <img
-                  src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
-                  alt={card.name}
-                />
-              </div>
-              <div className="card-back">
-                <h4>{card.name}</h4>
-                <p>{card.description}</p>
-              </div>
+        <section className="controls-section">
+          <div className="selection-section">
+            <p>Sélectionnez le nombre de cartes à tirer</p>
+            <div className="btn-group">
+              {[1, 2, 3, 4, 5].map(n => (
+                <button
+                  key={n}
+                  onClick={() => setCount(n)}
+                  className={count === n ? "active" : ""}
+                >
+                  {n} carte{n > 1 ? "s" : ""}
+                </button>
+              ))}
             </div>
           </div>
-        ))}
-      </section>
+
+          <div className="tirage-section">
+            <p>Cliquez pour lancer votre tirage</p>
+            <button className="tirer" onClick={tirer}>
+              🔮 Tirer les cartes
+            </button>
+          </div>
+        </section>
+
+        <section className={`display-section ${tirage.length > 0 ? "has-cards" : ""}`}>
+          <div className="tirage-cards">
+            {tirage.map((card, i) => (
+              <div
+                className={`card ${flipped[i] ? "flipped" : ""}`}
+                key={i}
+                onClick={() => handleFlip(i)}
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <div className="inner">
+                  <div className="front">
+                    <img src={process.env.PUBLIC_URL + "/Cartes/" + card.image} alt={card.name} />
+                  </div>
+                  <div className="back">
+                    <strong>{card.name}</strong>
+                    <p>{card.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
