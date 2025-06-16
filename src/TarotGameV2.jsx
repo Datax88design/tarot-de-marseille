@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./TarotGameV2.css";
+import './TarotGameV2.css';
+
 
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", description: "Bon présage amoureux, promotion et spiritualité." },
@@ -28,20 +29,13 @@ const tarotCards = [
 
 
 function getRandomCards(count) {
-  const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
+  return [...tarotCards].sort(() => 0.5 - Math.random()).slice(0, count);
 }
 
-export default function TarotGame() {
+export default function TarotGameV2() {
   const [count, setCount] = useState(1);
   const [tirage, setTirage] = useState([]);
   const [flipped, setFlipped] = useState([]);
-
-  const handleFlip = (index) => {
-    const updated = [...flipped];
-    updated[index] = !updated[index];
-    setFlipped(updated);
-  };
 
   const tirer = () => {
     const result = getRandomCards(count);
@@ -49,66 +43,65 @@ export default function TarotGame() {
     setFlipped(Array(result.length).fill(false));
   };
 
+  const handleFlip = (i) => {
+    const next = [...flipped];
+    next[i] = !next[i];
+    setFlipped(next);
+  };
+
   return (
-    <div className="page">
-      <header className="global-header">
-        <div className="header-content">
-          <span className="logo">🎴</span>
-          <h1>Tirage du Tarot</h1>
-        </div>
+    <div className="container">
+      <header className="header">
+        <span className="icon">🎴</span>
+        <h1>Tirage du Tarot de Marseille</h1>
+        <p className="date">Tirage du {new Date().toLocaleDateString()}</p>
       </header>
 
-      <main className="main-box">
-        <p className="today">Tirage du {new Date().toLocaleDateString()}</p>
+      <section className="controls">
+        <p>Sélectionnez le nombre de cartes à tirer</p>
+        <div className="button-grid">
+          {[1, 2, 3, 4, 5].map(n => (
+            <button
+              key={n}
+              onClick={() => setCount(n)}
+              className={count === n ? "active" : ""}
+            >
+              {n} carte{n > 1 ? "s" : ""}
+            </button>
+          ))}
+        </div>
+        <button className="draw-button" onClick={tirer}>
+          🔮 Tirer les cartes
+        </button>
+      </section>
 
-        <section className={`controls-section ${tirage.length > 0 ? "with-border" : ""}`}>
-          <div className="selection-section">
-            <p>Sélectionnez le nombre de cartes à tirer</p>
-            <div className="btn-group">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button key={n} onClick={() => setCount(n)}>
-                  {n} carte{n > 1 ? "s" : ""}
-                </button>
-              ))}
+      {tirage.length > 0 && (
+        <hr className="separator" />
+      )}
+
+      <section className="cards">
+        {tirage.map((card, i) => (
+          <div
+            className={`card ${flipped[i] ? "flipped" : ""}`}
+            key={i}
+            onClick={() => handleFlip(i)}
+            style={{ animationDelay: `${i * 0.2}s` }}
+          >
+            <div className="card-inner">
+              <div className="card-front">
+                <img
+                  src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
+                  alt={card.name}
+                />
+              </div>
+              <div className="card-back">
+                <h4>{card.name}</h4>
+                <p>{card.description}</p>
+              </div>
             </div>
           </div>
-
-          <div className="tirage-section">
-            <p>Cliquez pour lancer votre tirage</p>
-            <button onClick={tirer} className="tirer">
-              🔮 Tirer les cartes
-            </button>
-          </div>
-        </section>
-
-        <section className="display-section">
-          <div className="tirage-cards">
-            {tirage.map((card, i) => (
-              <div
-                key={i}
-                className={`card ${flipped[i] ? "flipped" : ""}`}
-                onClick={() => handleFlip(i)}
-                style={{ animationDelay: `${i * 0.2}s` }}
-              >
-                <div className="inner">
-                  <div className="front">
-                    <img
-                      src={process.env.PUBLIC_URL + "/Cartes/" + card.image}
-                      alt={card.name}
-                      onError={(e) => (e.target.style.display = "none")}
-                    />
-                  </div>
-                  <div className="back">
-                    <h4>{card.name}</h4>
-                    <p>{card.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
+        ))}
+      </section>
     </div>
   );
 }
-
