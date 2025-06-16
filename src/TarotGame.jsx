@@ -53,7 +53,7 @@ export default function TarotGame() {
       <header className="global-header">
         <div className="header-content">
           <span className="logo">🎴</span>
-          <h1>Tirage du Tarot de Marseille</h1>
+          <h1>Tirage du Tarot</h1>
         </div>
       </header>
 
