@@ -1,209 +1,164 @@
-/* TarotGameV2.css - Fidèle au prototype Figma, responsive, moderne */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  color: #212529;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-.page {
-  padding: 0;
+.tarot-app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  padding: 0rem;
+  text-align: center;
 }
 
-.global-header {
-  background: #ffffff;
+.header {
   width: 100%;
-  padding: 0rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
-.logo {
-  font-size: 1.8rem;
+.selection-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #004d40;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.main-box {
-  width: 100%;
-  max-width: 900px;
-  padding: 2rem 1rem;
-  background: #ffffff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-  margin-top: 2rem;
-}
-
-.today {
-  text-align: center;
-  font-style: italic;
-  color: #6c757d;
-  margin-bottom: 2rem;
-}
-
-.controls-section {
+.count-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.selection-section p,
-.tirage-section p {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.btn-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  width: 100%;
-  max-width: 400px;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-.btn-group button,
-.tirer {
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+.count-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background-color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-  background-color: #f1f3f5;
-  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-group button:hover,
-.tirer:hover {
-  background-color: #e2e6ea;
-  transform: translateY(-2px);
-}
-
-.btn-group button.active {
-  background-color: #c4a000;
+.count-buttons button.selected {
+  background-color: #007a33;
   color: white;
 }
 
-.tirer {
-  background-color: #c4a000;
-  color: #fff;
-  font-weight: bold;
+.draw-button {
+  background-color: #007a33;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  margin-top: 6rem;
 }
 
-.display-section {
-  border-top: 2px solid transparent;
-  padding-top: 1.5rem;
-  transition: border-color 0.3s;
+.draw-button:hover {
+  background-color: #005f26;
 }
 
-.display-section.has-cards {
-  border-color: #dee2e6;
-}
-
-.tirage-cards {
+.cards-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  position: relative;
+  min-height: 250px;
 }
 
 .card {
-  width: 130px;
-  height: 230px;
+  width: 120px;
+  height: 200px;
   perspective: 1000px;
-  animation: slideInCard 0.6s ease forwards;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
-.card.flipped .inner {
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
-.inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.8s ease;
-  transform-style: preserve-3d;
-}
-
-.front,
-.back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  background-color: #fff;
   padding: 10px;
-  text-align: center;
 }
 
-.front img {
+.card-front img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 10px;
 }
 
-.back {
+.card-back {
   transform: rotateY(180deg);
+  font-size: 0.85rem;
+  color: #333;
 }
 
-@keyframes slideInCard {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@media (max-width: 600px) {
-  .main-box {
-    padding: 1rem;
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
   .card {
-    width: 100px;
-    height: 170px;
+    width: 90px;
+    height: 150px;
   }
 
-  .btn-group {
-    grid-template-columns: 1fr 1fr;
+  .draw-button {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .count-buttons {
+    gap: 0.5rem;
   }
 
-  .back {
-    font-size: 0.85rem;
-    padding: 0.5rem;
+  .selection-section h2 {
+    font-size: 1rem;
   }
 }

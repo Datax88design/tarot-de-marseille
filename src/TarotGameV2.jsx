@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import React, { useState } from 'react';
 import './TarotGameV2.css';
 
 const tarotCards = [
@@ -26,89 +27,75 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", description: "Liberté, nouveauté, imprévu." }
 ];
 
-
-function getToday() {
-  return new Date().toLocaleDateString("fr-FR");
-}
-
-function getRandomCards(count) {
-  return [...tarotCards].sort(() => 0.5 - Math.random()).slice(0, count);
-}
-
-export default function TarotGameV2() {
-  const [count, setCount] = useState(1);
-  const [tirage, setTirage] = useState([]);
+function TarotGameV2() {
+  const [selectedCount, setSelectedCount] = useState(5);
+  const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
 
-  const tirer = () => {
-    const result = getRandomCards(count);
-    setTirage(result);
-    setFlipped(Array(result.length).fill(false));
+  const drawCards = () => {
+    const shuffled = tarotCards.sort(() => 0.5 - Math.random());
+    const drawn = shuffled.slice(0, selectedCount);
+    setDrawnCards(drawn);
+    setFlipped(new Array(selectedCount).fill(false));
   };
 
-  const handleFlip = (i) => {
-    const next = [...flipped];
-    next[i] = !next[i];
-    setFlipped(next);
+  const toggleFlip = index => {
+    const newFlips = [...flipped];
+    newFlips[index] = !newFlips[index];
+    setFlipped(newFlips);
   };
+
+  const angleStep = 10;
 
   return (
-    <div className="page">
-      <header className="global-header">
-        <img src="/favicon.ico" alt="logo" width={28} height={28} />
-        <h1>Tirage du Tarot de Marseille</h1>
-      </header>
+    <div className="tarot-app">
+      <div className="header">
+        <div>🔮 Tarot</div>
+        <div>Username</div>
+      </div>
 
-      <main className="main-box">
-        <p className="today">Tirage du {getToday()}</p>
-
-        <section className="controls-section">
-          <div className="selection-section">
-            <p>Sélectionnez le nombre de cartes à tirer</p>
-            <div className="btn-group">
-              {[1, 2, 3, 4, 5].map(n => (
-                <button
-                  key={n}
-                  onClick={() => setCount(n)}
-                  className={count === n ? "active" : ""}
-                >
-                  {n} carte{n > 1 ? "s" : ""}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="tirage-section">
-            <p>Cliquez pour lancer votre tirage</p>
-            <button className="tirer" onClick={tirer}>
-              🔮 Tirer les cartes
+      <div className="selection-section">
+        <h2>Sélectionnez le nombres de cartes à tirer</h2>
+        <div className="count-buttons">
+          {[1, 2, 3, 4, 5].map(n => (
+            <button
+              key={n}
+              onClick={() => setSelectedCount(n)}
+              className={n === selectedCount ? 'selected' : ''}
+            >
+              {n}
             </button>
-          </div>
-        </section>
+          ))}
+        </div>
+      </div>
 
-        <section className={`display-section ${tirage.length > 0 ? "has-cards" : ""}`}>
-          <div className="tirage-cards">
-            {tirage.map((card, i) => (
-              <div
-                className={`card ${flipped[i] ? "flipped" : ""}`}
-                key={i}
-                onClick={() => handleFlip(i)}
-                style={{ animationDelay: `${i * 0.15}s` }}
-              >
-                <div className="inner">
-                  <div className="front">
-                    <img src={process.env.PUBLIC_URL + "/Cartes/" + card.image} alt={card.name} />
-                  </div>
-                  <div className="back">
-                    <strong>{card.name}</strong>
-                    <p>{card.description}</p>
-                  </div>
+      <div className="cards-section">
+        {drawnCards.map((card, index) => {
+          const rotation = (index - Math.floor(drawnCards.length / 2)) * angleStep;
+          return (
+            <div
+              key={index}
+              className={`card ${flipped[index] ? 'flipped' : ''}`}
+              onClick={() => toggleFlip(index)}
+              style={{ transform: `rotate(${rotation}deg)` }}
+            >
+              <div className="card-inner">
+                <div className="card-front">
+                  <img src={process.env.PUBLIC_URL + `/Cartes/${card.image}`} alt={card.name} />
+                </div>
+                <div className="card-back">
+                  <strong>{card.name}</strong>
+                  <p>{card.description}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-      </main>
+            </div>
+          );
+        })}
+      </div>
+
+      <button className="draw-button" onClick={drawCards}>🔮 Tirez les cartes</button>
     </div>
   );
 }
+
+export default TarotGameV2;
