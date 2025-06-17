@@ -48,7 +48,7 @@ function TarotGameV2() {
     <div className="tarot-app">
       <div className="header">
         <h1>🔮 Tarot</h1>
-        <div>Logout</div>
+        <div>Log out</div>
       </div>
 
       <div className="selection-section">
