@@ -87,7 +87,7 @@ function TarotGameV2() {
       </div>
 
       <button className="draw-button" onClick={drawCards}>
-        🔮 Tirez les cartes
+       Tirez les cartes
       </button>
     </div>
   );
