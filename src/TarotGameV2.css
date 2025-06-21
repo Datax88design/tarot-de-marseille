@@ -65,7 +65,7 @@ body {
 }
 
 .count-buttons button:hover {
-  background: #e0f2f1;
+  background: #308152;
 }
 
 .count-buttons .selected {
@@ -106,7 +106,7 @@ body {
   flex: 1 1 120px;
   max-width: 160px;
   min-width: 80px;
-  height: 200px;
+  height: 300px;
   cursor: pointer;
   position: relative;
   transform-origin: center bottom;
