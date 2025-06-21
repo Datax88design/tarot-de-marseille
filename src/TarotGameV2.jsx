@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './TarotGameV2.css';
 
 const tarotCards = [
@@ -26,23 +26,47 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", meaning: "Nouveau départ, grands changements de vie." }
 ];
 
+function TarotCard({ card, flipped, onClick }) {
+  return (
+    <div
+      className={`card ${flipped ? 'flipped' : ''}`}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      aria-pressed={flipped}
+    >
+      <div className="card-inner">
+        <div className="card-front">
+          <img src={`/Cartes/${card.image}`} alt={card.name} />
+        </div>
+        <div className="card-back">
+          <strong>{card.name}</strong>
+          <p>{card.meaning}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
 
-  const drawCards = () => {
+  const drawCards = useCallback(() => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, selectedCount);
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
-  };
+  }, [selectedCount]);
 
-  const toggleFlip = (index) => {
-    const newFlipped = [...flipped];
-    newFlipped[index] = !newFlipped[index];
-    setFlipped(newFlipped);
-  };
+  const toggleFlip = useCallback((index) => {
+    setFlipped(prev => {
+      const newFlipped = [...prev];
+      newFlipped[index] = !newFlipped[index];
+      return newFlipped;
+    });
+  }, []);
 
   return (
     <div className="tarot-app">
@@ -59,6 +83,7 @@ function TarotGameV2() {
               key={n}
               onClick={() => setSelectedCount(n)}
               className={n === selectedCount ? 'selected' : ''}
+              aria-label={`Tirer ${n} carte${n > 1 ? 's' : ''}`}
             >
               {n}
             </button>
@@ -68,26 +93,23 @@ function TarotGameV2() {
 
       <div className="cards-section">
         {drawnCards.map((card, index) => (
-          <div
+          <TarotCard
             key={index}
-            className={`card ${flipped[index] ? 'flipped' : ''}`}
+            card={card}
+            flipped={flipped[index]}
             onClick={() => toggleFlip(index)}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <img src={`/Cartes/${card.image}`} alt={card.name} />
-              </div>
-              <div className="card-back">
-                <strong>{card.name}</strong>
-                <p>{card.meaning}</p>
-              </div>
-            </div>
-          </div>
+          />
         ))}
       </div>
 
+      {drawnCards.length > 0 && (
+        <p className="reveal-status">
+          {flipped.filter(f => f).length}/{drawnCards.length} cartes révélées
+        </p>
+      )}
+
       <button className="draw-button" onClick={drawCards}>
-       Tirez les cartes
+        Tirez les cartes
       </button>
     </div>
   );
