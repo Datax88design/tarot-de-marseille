@@ -65,7 +65,7 @@ body {
 }
 
 .count-buttons button:hover {
-  background: #308152;
+  background: #e0f2f1;
 }
 
 .count-buttons .selected {
@@ -106,7 +106,7 @@ body {
   flex: 1 1 120px;
   max-width: 160px;
   min-width: 80px;
-  height: 300px;
+  height: 260px; /* ✅ hauteur ajustée */
   cursor: pointer;
   position: relative;
   transform-origin: center bottom;
@@ -142,9 +142,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.card-front {
   justify-content: center;
   padding: 10px;
-  box-sizing: border-box;
 }
 
 .card-front img {
@@ -154,9 +157,17 @@ body {
 }
 
 .card-back {
+  justify-content: flex-start; /* ✅ aligne le titre en haut */
   transform: rotateY(180deg);
-  font-size: 0.9rem;
+  padding: 20px;
+  font-size: 0.95rem;
   color: #333;
+  gap: 4px;
+  text-align: center;
+}
+
+.card-back strong {
+  margin-top: 0;
 }
 
 .reveal-status {
@@ -168,7 +179,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .card {
-    height: 150px;
+    height: 200px;
   }
 
   .draw-button {
@@ -177,8 +188,7 @@ body {
   }
 
   .card-back {
-    font-size: 0.75rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .header {
@@ -192,12 +202,12 @@ body {
 
 @media (max-width: 480px) {
   .cards-section {
-    gap: 0.5rem;
-    flex-wrap: wrap; /* Si écran très étroit */
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
-    height: 130px;
+    height: 160px;
   }
 
   .draw-button {
