@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 
-/* Header avec titre à gauche, tabs centrés, logout à droite */
+/* --- HEADER --- */
 .header {
   position: relative;
   width: 100%;
@@ -43,17 +43,23 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
+/* Alignement parfait vertical des tabs */
 .tabs button {
   background: none;
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  padding-bottom: 6px;
+  padding: 0 0 4px;
   border-bottom: 2px solid transparent;
   color: #333;
   font-weight: 500;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -62,6 +68,7 @@ body {
   color: #1a73e8;
 }
 
+/* --- SECTION TIRAGE --- */
 .selection-section h2 {
   font-size: 1.3rem;
   font-weight: 400;
@@ -114,6 +121,7 @@ body {
   background: #005f26;
 }
 
+/* --- CARTES --- */
 .cards-section {
   display: flex;
   justify-content: center;
@@ -201,7 +209,7 @@ body {
   color: #555;
 }
 
-/* Historique */
+/* --- HISTORIQUE --- */
 .history-section {
   padding: 1rem 2vw;
   width: 100%;
@@ -219,7 +227,7 @@ body {
   color: #004d40;
 }
 
-/* Responsive ajusté (plus rien ne saute en-dessous) */
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .card {
     height: 200px;
