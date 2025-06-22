@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 
 const tarotCards = [
@@ -30,12 +30,25 @@ function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
+  const [tab, setTab] = useState('tirage');
+  const [history, setHistory] = useState([]);
+
+  useEffect(() => {
+    const savedHistory = localStorage.getItem('tarotHistory');
+    if (savedHistory) {
+      setHistory(JSON.parse(savedHistory));
+    }
+  }, []);
 
   const drawCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, selectedCount);
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
+
+    const newHistory = [...history, { date: new Date().toLocaleString(), cards: selected }];
+    setHistory(newHistory);
+    localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
 
   const toggleFlip = (index) => {
@@ -48,61 +61,98 @@ function TarotGameV2() {
     <div className="tarot-app">
       <div className="header">
         <h1>Tarot</h1>
+        <div className="tabs">
+          <button className={tab === 'tirage' ? 'active' : ''} onClick={() => setTab('tirage')}>Tirage</button>
+          <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
+        </div>
         <div>Log out</div>
       </div>
 
-      <div className="selection-section">
-        <h2>Combien de cartes voulez-vous tirer ?</h2>
-        <div className="count-buttons">
-          {[1, 2, 3, 4, 5].map(n => (
-            <button
-              key={n}
-              onClick={() => setSelectedCount(n)}
-              className={n === selectedCount ? 'selected' : ''}
-            >
-              {n}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="cards-section">
-        {drawnCards.length === 0 ? (
-          <div className="card placeholder-card">
-            <div className="card-inner">
-              <div className="card-front">
-                <p>Vos cartes apparaîtront ici...</p>
-              </div>
+      {tab === 'tirage' && (
+        <>
+          <div className="selection-section">
+            <h2>Combien de cartes voulez-vous tirer ?</h2>
+            <div className="count-buttons">
+              {[1, 2, 3, 4, 5].map(n => (
+                <button
+                  key={n}
+                  onClick={() => setSelectedCount(n)}
+                  className={n === selectedCount ? 'selected' : ''}
+                >
+                  {n}
+                </button>
+              ))}
             </div>
           </div>
-        ) : (
-          drawnCards.map((card, index) => (
-            <div
-              key={index}
-              className={`card ${flipped[index] ? 'flipped' : ''}`}
-              onClick={() => toggleFlip(index)}
-            >
-              <div className="card-inner">
-                <div className="card-front">
-                  <img src={`/Cartes/${card.image}`} alt={card.name} />
-                </div>
-                <div className="card-back">
-                  <strong>{card.name}</strong>
-                  <p>{card.meaning}</p>
+
+          <div className="cards-section">
+            {drawnCards.length === 0 ? (
+              <div className="card placeholder-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <p>Vos cartes apparaîtront ici...</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))
-        )}
-      </div>
+            ) : (
+              drawnCards.map((card, index) => (
+                <div
+                  key={index}
+                  className={`card ${flipped[index] ? 'flipped' : ''}`}
+                  onClick={() => toggleFlip(index)}
+                >
+                  <div className="card-inner">
+                    <div className="card-front">
+                      <img src={`/Cartes/${card.image}`} alt={card.name} />
+                    </div>
+                    <div className="card-back">
+                      <strong>{card.name}</strong>
+                      <p>{card.meaning}</p>
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
 
-      <div className="reveal-status">
-        {drawnCards.length > 0 && `${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
-      </div>
+          <div className="reveal-status">
+            {drawnCards.length > 0 && `${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
+          </div>
 
-      <button className="draw-button" onClick={drawCards}>
-        Tirez les cartes
-      </button>
+          <button className="draw-button" onClick={drawCards}>
+            Tirez les cartes
+          </button>
+        </>
+      )}
+
+      {tab === 'historique' && (
+        <div className="history-section">
+          {history.length === 0 ? (
+            <p>Aucun tirage encore enregistré.</p>
+          ) : (
+            history.map((entry, i) => (
+              <div key={i} className="history-entry">
+                <h3>{entry.date}</h3>
+                <div className="cards-section">
+                  {entry.cards.map((card, idx) => (
+                    <div key={idx} className="card history-card">
+                      <div className="card-inner flipped">
+                        <div className="card-front">
+                          <img src={`/Cartes/${card.image}`} alt={card.name} />
+                        </div>
+                        <div className="card-back">
+                          <strong>{card.name}</strong>
+                          <p>{card.meaning}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      )}
     </div>
   );
 }
