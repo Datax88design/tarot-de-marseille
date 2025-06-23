@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
+import astroData from './data/astroData_2025.json';
 
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", meaning: "Bon présage sentimental, bénéfique pour la carrière, propice à la méditation spirituelle." },
@@ -26,12 +27,31 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", meaning: "Nouveau départ, grands changements de vie." }
 ];
 
+function TarotCard({ card, flipped, onClick }) {
+  return (
+    <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick} aria-label={`Carte de tarot : ${card.name}`}>
+      <div className="card-inner">
+        <div className="card-front">
+          <img src={`/Cartes/${card.image}`} alt={card.name} loading="lazy" />
+        </div>
+        <div className="card-back">
+          <strong>{card.name}</strong>
+          <p>{card.meaning}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
   const [tab, setTab] = useState('tirage');
   const [history, setHistory] = useState([]);
+
+  const today = new Date().toISOString().split('T')[0];
+  const astro = astroData[today];
 
   useEffect(() => {
     const savedHistory = localStorage.getItem('tarotHistory');
@@ -46,7 +66,10 @@ function TarotGameV2() {
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
 
-    const newHistory = [...history, { date: new Date().toLocaleString(), cards: selected }];
+    const newHistory = [
+      ...history,
+      { date: new Date().toLocaleString(), cards: selected },
+    ];
     setHistory(newHistory);
     localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
@@ -57,6 +80,20 @@ function TarotGameV2() {
     setFlipped(newFlipped);
   };
 
+  const resetDraw = () => {
+    setDrawnCards([]);
+    setFlipped([]);
+  };
+
+  const getStats = () => {
+    const allDraws = history.flatMap(entry => entry.cards.map(card => card.name));
+    const stats = allDraws.reduce((acc, name) => {
+      acc[name] = (acc[name] || 0) + 1;
+      return acc;
+    }, {});
+    return Object.entries(stats).sort((a, b) => b[1] - a[1]);
+  };
+
   return (
     <div className="tarot-app">
       <div className="header">
@@ -64,6 +101,7 @@ function TarotGameV2() {
         <div className="tabs">
           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => setTab('tirage')}>Tirage</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
+          <button className={tab === 'stats' ? 'active' : ''} onClick={() => setTab('stats')}>Statistiques</button>
         </div>
         <div>Log out</div>
       </div>
@@ -73,7 +111,7 @@ function TarotGameV2() {
           <div className="selection-section">
             <h2>Combien de cartes voulez-vous tirer ?</h2>
             <div className="count-buttons">
-              {[1, 2, 3, 4, 5].map(n => (
+              {[1, 2, 3, 4, 5].map((n) => (
                 <button
                   key={n}
                   onClick={() => setSelectedCount(n)}
@@ -96,32 +134,36 @@ function TarotGameV2() {
               </div>
             ) : (
               drawnCards.map((card, index) => (
-                <div
+                <TarotCard
                   key={index}
-                  className={`card ${flipped[index] ? 'flipped' : ''}`}
+                  card={card}
+                  flipped={flipped[index]}
                   onClick={() => toggleFlip(index)}
-                >
-                  <div className="card-inner">
-                    <div className="card-front">
-                      <img src={`/Cartes/${card.image}`} alt={card.name} />
-                    </div>
-                    <div className="card-back">
-                      <strong>{card.name}</strong>
-                      <p>{card.meaning}</p>
-                    </div>
-                  </div>
-                </div>
+                />
               ))
             )}
           </div>
 
-          <div className="reveal-status">
-            {drawnCards.length > 0 && `${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
-          </div>
+          {drawnCards.length > 0 && (
+            <div className="reveal-status">
+              {`${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
+            </div>
+          )}
 
-          <button className="draw-button" onClick={drawCards}>
-            Tirez les cartes
-          </button>
+          {astro && (
+            <div className="astro-display">
+              <h4>Contexte astrologique</h4>
+              <p>
+                {astro.lune} en {astro.signe}<br />
+                — {astro.message}
+              </p>
+            </div>
+          )}
+
+          <div className="button-group">
+            <button className="reset-button" onClick={resetDraw}>Réinitialiser</button>
+            <button className="draw-button" onClick={drawCards}>Tirez les cartes</button>
+          </div>
         </>
       )}
 
@@ -135,22 +177,23 @@ function TarotGameV2() {
                 <h3>{entry.date}</h3>
                 <div className="cards-section">
                   {entry.cards.map((card, idx) => (
-                    <div key={idx} className="card history-card">
-                      <div className="card-inner flipped">
-                        <div className="card-front">
-                          <img src={`/Cartes/${card.image}`} alt={card.name} />
-                        </div>
-                        <div className="card-back">
-                          <strong>{card.name}</strong>
-                          <p>{card.meaning}</p>
-                        </div>
-                      </div>
-                    </div>
+                    <TarotCard key={idx} card={card} flipped={true} onClick={() => {}} />
                   ))}
                 </div>
               </div>
             ))
           )}
+        </div>
+      )}
+
+      {tab === 'stats' && (
+        <div className="stats-section">
+          <h3>Cartes les plus souvent tirées</h3>
+          <ul>
+            {getStats().map(([name, count], i) => (
+              <li key={i}><strong>{name}</strong>: {count} fois</li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

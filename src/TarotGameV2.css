@@ -1,8 +1,8 @@
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f6f6f6;
+  background: #f5f5f5;
   color: #212121;
 }
 
@@ -10,24 +10,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
   text-align: center;
 }
 
-/* --- HEADER --- */
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
-  background-color: #ffffff;
-  padding: 0.5rem 2rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  position: sticky;
-  top: 0;
   z-index: 100;
+  box-sizing: border-box;
 }
 
 .header h1 {
@@ -36,17 +33,14 @@ body {
   font-weight: 300;
 }
 
-/* Centrage absolu des tabs */
 .tabs {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 1.5rem;
-  align-items: center;
 }
 
-/* Alignement parfait vertical des tabs */
 .tabs button {
   background: none;
   border: none;
@@ -56,10 +50,6 @@ body {
   border-bottom: 2px solid transparent;
   color: #333;
   font-weight: 500;
-  line-height: 1.5;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -68,7 +58,6 @@ body {
   color: #1a73e8;
 }
 
-/* --- SECTION TIRAGE --- */
 .selection-section h2 {
   font-size: 1.3rem;
   font-weight: 400;
@@ -98,6 +87,7 @@ body {
 
 .count-buttons button:hover {
   background: #3c9260;
+  color: #fff;
 }
 
 .count-buttons .selected {
@@ -105,13 +95,19 @@ body {
   color: white;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
 .draw-button {
-  margin-top: 2rem;
   background: #007a33;
   color: white;
   padding: 0.7rem 1.5rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
@@ -121,7 +117,22 @@ body {
   background: #005f26;
 }
 
-/* --- CARTES --- */
+.reset-button {
+  background: white;
+  color: #007a33;
+  border: 2px solid #007a33;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.reset-button:hover {
+  background: #e8f5e9;
+  color: #005f26;
+}
+
 .cards-section {
   display: flex;
   justify-content: center;
@@ -129,10 +140,10 @@ body {
   margin-top: 2rem;
   width: 100%;
   padding: 0 2vw 1rem;
-  overflow: hidden;
-  box-sizing: border-box;
+  overflow-x: auto;
   gap: 1rem;
   flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 .card {
@@ -167,7 +178,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   backface-visibility: hidden;
   background: white;
@@ -175,11 +186,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
-}
-
-.card-front {
   justify-content: center;
+  box-sizing: border-box;
   padding: 10px;
 }
 
@@ -190,9 +198,7 @@ body {
 }
 
 .card-back {
-  justify-content: flex-start;
   transform: rotateY(180deg);
-  padding: 20px;
   font-size: 0.95rem;
   color: #333;
   gap: 4px;
@@ -200,7 +206,8 @@ body {
 }
 
 .card-back strong {
-  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .reveal-status {
@@ -209,25 +216,65 @@ body {
   color: #555;
 }
 
-/* --- HISTORIQUE --- */
 .history-section {
-  padding: 1rem 2vw;
   width: 100%;
-  box-sizing: border-box;
+  max-width: 900px;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .history-entry {
   margin-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1rem;
 }
 
 .history-entry h3 {
-  margin: 0 0 0.5rem;
-  color: #004d40;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
 
-/* --- RESPONSIVE --- */
+.history-card {
+  pointer-events: none;
+}
+
+.stats-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.stats-section h3 {
+  margin-bottom: 1rem;
+  color: #007a33;
+}
+
+.stats-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stats-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.astro-display {
+  margin: 1.5rem auto 0;
+  padding: 0.5rem 1rem;
+  max-width: 600px;
+  background: none;
+  text-align: center;
+}
+
+.astro-display h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
 @media (max-width: 768px) {
   .card {
     height: 200px;
@@ -240,10 +287,6 @@ body {
 
   .card-back {
     font-size: 0.8rem;
-  }
-
-  .tabs button {
-    font-size: 0.95rem;
   }
 }
 
@@ -263,9 +306,5 @@ body {
 
   .selection-section h2 {
     font-size: 1.1rem;
-  }
-
-  .tabs button {
-    font-size: 0.9rem;
   }
 }
