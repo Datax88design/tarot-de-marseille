@@ -103,7 +103,7 @@ function TarotGameV2() {
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
           <button className={tab === 'stats' ? 'active' : ''} onClick={() => setTab('stats')}>Statistiques</button>
         </div>
-        <div>Log out</div>
+        
       </div>
 
       {tab === 'tirage' && (

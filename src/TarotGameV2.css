@@ -21,6 +21,7 @@ body {
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -34,9 +35,6 @@ body {
 }
 
 .tabs {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 1.5rem;
 }
@@ -100,6 +98,7 @@ body {
   justify-content: center;
   gap: 1rem;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .draw-button {
@@ -275,12 +274,25 @@ body {
   color: #333;
 }
 
+/* Responsive fixes */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+    position: static;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+
   .card {
     height: 200px;
   }
 
-  .draw-button {
+  .draw-button, .reset-button {
     width: 90%;
     font-size: 0.95rem;
   }
@@ -300,7 +312,7 @@ body {
     height: 160px;
   }
 
-  .draw-button {
+  .draw-button, .reset-button {
     font-size: 0.9rem;
   }
 
