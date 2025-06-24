@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -18,7 +19,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +94,16 @@ body {
   color: white;
 }
 
+.count-buttons.love button {
+  border-color: #c2185b;
+}
+
+.count-buttons.love button.selected {
+  background: #c2185b;
+  color: white;
+  border-color: #c2185b;
+}
+
 .button-group {
   display: flex;
   justify-content: center;
@@ -116,6 +127,14 @@ body {
   background: #005f26;
 }
 
+.draw-button.love {
+  background: #c2185b;
+}
+
+.draw-button.love:hover {
+  background: #a3154d;
+}
+
 .reset-button {
   background: white;
   color: #007a33;
@@ -130,6 +149,16 @@ body {
 .reset-button:hover {
   background: #e8f5e9;
   color: #005f26;
+}
+
+.reset-button.love {
+  border-color: #c2185b;
+  color: #c2185b;
+}
+
+.reset-button.love:hover {
+  background: #fce4ec;
+  color: #a3154d;
 }
 
 .cards-section {
@@ -274,7 +303,19 @@ body {
   color: #333;
 }
 
-/* Responsive fixes */
+.love-input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #004d40;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -299,6 +340,10 @@ body {
 
   .card-back {
     font-size: 0.8rem;
+  }
+
+  .love-input {
+    width: 95%;
   }
 }
 

@@ -1,3 +1,4 @@
+// VERSION AVEC CHOIX DE 1 OU 3 CARTES POUR LE TIRAGE AMOUREUX
 import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
@@ -49,6 +50,7 @@ function TarotGameV2() {
   const [flipped, setFlipped] = useState([]);
   const [tab, setTab] = useState('tirage');
   const [history, setHistory] = useState([]);
+  const [loveName, setLoveName] = useState('');
 
   const today = new Date().toISOString().split('T')[0];
   const astro = astroData[today];
@@ -85,6 +87,17 @@ function TarotGameV2() {
     setFlipped([]);
   };
 
+  const drawLoveCards = () => {
+    const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, selectedCount);
+    const personalized = selected.map(card => ({
+      ...card,
+      meaning: `Dans votre lien avec ${loveName}, ${card.meaning.toLowerCase()}`
+    }));
+    setDrawnCards(personalized);
+    setFlipped(new Array(selected.length).fill(false));
+  };
+
   const getStats = () => {
     const allDraws = history.flatMap(entry => entry.cards.map(card => card.name));
     const stats = allDraws.reduce((acc, name) => {
@@ -100,28 +113,60 @@ function TarotGameV2() {
         <h1>Tarot</h1>
         <div className="tabs">
           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => setTab('tirage')}>Tirage</button>
+          <button className={tab === 'amour' ? 'active' : ''} onClick={() => setTab('amour')}>Tirage Amoureux</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
           <button className={tab === 'stats' ? 'active' : ''} onClick={() => setTab('stats')}>Statistiques</button>
         </div>
-        
       </div>
 
-      {tab === 'tirage' && (
+      {(tab === 'tirage' || tab === 'amour') && (
         <>
-          <div className="selection-section">
-            <h2>Combien de cartes voulez-vous tirer ?</h2>
-            <div className="count-buttons">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button
-                  key={n}
-                  onClick={() => setSelectedCount(n)}
-                  className={n === selectedCount ? 'selected' : ''}
-                >
-                  {n}
-                </button>
-              ))}
+          {tab === 'amour' && (
+            <>
+              <div className="selection-section">
+                <h2>Avec qui souhaitez-vous faire un tirage ?</h2>
+                <input
+                  type="text"
+                  value={loveName}
+                  onChange={(e) => setLoveName(e.target.value)}
+                  placeholder="Prénom du partenaire"
+                  className="love-input"
+                />
+              </div>
+              <div className="selection-section">
+                <h2>Quel tirage souhaitez-vous ?</h2>
+                <div className="count-buttons love">
+                  {[1, 3].map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => setSelectedCount(n)}
+                      className={n === selectedCount ? 'selected love' : ''}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+
+          {tab === 'tirage' && (
+            <div className="selection-section">
+              <h2>Combien de cartes voulez-vous tirer ?</h2>
+              <div className="count-buttons">
+                {[1, 2, 3, 4, 5].map((n) => (
+  <button
+    key={n}
+    onClick={() => setSelectedCount(n)}
+    className={n === selectedCount ? 'selected' : ''}
+  >
+    {n}
+  </button>
+))}
+
+              </div>
             </div>
-          </div>
+          )}
 
           <div className="cards-section">
             {drawnCards.length === 0 ? (
@@ -150,7 +195,7 @@ function TarotGameV2() {
             </div>
           )}
 
-          {astro && (
+          {astro && tab === 'tirage' && (
             <div className="astro-display">
               <h4>Contexte astrologique</h4>
               <p>
@@ -161,8 +206,13 @@ function TarotGameV2() {
           )}
 
           <div className="button-group">
-            <button className="reset-button" onClick={resetDraw}>Réinitialiser</button>
-            <button className="draw-button" onClick={drawCards}>Tirez les cartes</button>
+            <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>Réinitialiser</button>
+            <button
+              className={`draw-button ${tab === 'amour' ? 'love' : ''}`}
+              onClick={tab === 'tirage' ? drawCards : drawLoveCards}
+            >
+              Tirez les cartes
+            </button>
           </div>
         </>
       )}
