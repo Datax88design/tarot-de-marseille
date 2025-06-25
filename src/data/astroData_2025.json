@@ -1,1827 +1,4017 @@
 {
   "2025-01-01": {
-    "lune": "Dernier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-02": {
-    "lune": "Dernier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-01-03": {
-    "lune": "Dernier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-04": {
-    "lune": "Dernier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-05": {
-    "lune": "Dernier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-06": {
-    "lune": "Dernier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-01-07": {
-    "lune": "Nouvelle Lune",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-08": {
-    "lune": "Nouvelle Lune",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-01-09": {
     "lune": "Nouvelle Lune",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-01-10": {
-    "lune": "Nouvelle Lune",
+    "lune": "Premier croissant",
     "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-01-11": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-01-12": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-01-13": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-01-14": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-01-15": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-01-16": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-01-17": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-01-18": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-01-19": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-01-20": {
     "lune": "Gibbeuse croissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-01-21": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-01-22": {
-    "lune": "Pleine Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-01-23": {
-    "lune": "Pleine Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-24": {
-    "lune": "Pleine Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-25": {
-    "lune": "Pleine Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-26": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-27": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-28": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-29": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
-  },
-  "2025-01-30": {
     "lune": "Dernier quartier",
     "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
+  },
+  "2025-01-24": {
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Saturne sextile Lune noire"
+    ]
+  },
+  "2025-01-25": {
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
+  },
+  "2025-01-26": {
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
+  },
+  "2025-01-27": {
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
+  },
+  "2025-01-28": {
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
+  },
+  "2025-01-29": {
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
+  },
+  "2025-01-30": {
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-01-31": {
     "lune": "Dernier quartier",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-02-01": {
-    "lune": "Dernier quartier",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-02-02": {
-    "lune": "Dernier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-02-03": {
-    "lune": "Dernier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-02-04": {
-    "lune": "Dernier croissant",
+    "lune": "Premier quartier",
     "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-02-05": {
-    "lune": "Nouvelle Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-06": {
-    "lune": "Nouvelle Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-02-07": {
-    "lune": "Nouvelle Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-08": {
-    "lune": "Nouvelle Lune",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-09": {
-    "lune": "Premier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-02-10": {
-    "lune": "Premier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-02-11": {
     "lune": "Premier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-02-12": {
-    "lune": "Premier croissant",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-02-13": {
-    "lune": "Premier quartier",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-14": {
-    "lune": "Premier quartier",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-02-15": {
-    "lune": "Premier quartier",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-16": {
-    "lune": "Premier quartier",
+    "lune": "Dernier quartier",
     "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-02-17": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-02-18": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Verseau",
-    "message": "Sors du cadre, ose l’originalité."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-02-19": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-02-20": {
-    "lune": "Pleine Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-21": {
-    "lune": "Pleine Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-02-22": {
     "lune": "Pleine Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-02-23": {
-    "lune": "Pleine Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-02-24": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-02-25": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-02-26": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-02-27": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-02-28": {
-    "lune": "Dernier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-01": {
-    "lune": "Dernier quartier",
+    "lune": "Gibbeuse croissante",
     "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-02": {
-    "lune": "Dernier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-03": {
-    "lune": "Dernier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-04": {
-    "lune": "Dernier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-03-05": {
     "lune": "Dernier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-03-06": {
     "lune": "Nouvelle Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-07": {
-    "lune": "Nouvelle Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-08": {
-    "lune": "Nouvelle Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-03-09": {
-    "lune": "Nouvelle Lune",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-10": {
-    "lune": "Premier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-03-11": {
-    "lune": "Premier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-12": {
-    "lune": "Premier croissant",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-03-13": {
-    "lune": "Premier croissant",
+    "lune": "Dernier croissant",
     "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-14": {
-    "lune": "Premier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-15": {
-    "lune": "Premier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-16": {
     "lune": "Premier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-17": {
-    "lune": "Premier quartier",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-18": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-19": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-20": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Poissons",
-    "message": "Laisse parler ton intuition et ton imagination."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-21": {
-    "lune": "Pleine Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-22": {
-    "lune": "Pleine Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-03-23": {
-    "lune": "Pleine Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-24": {
-    "lune": "Pleine Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-25": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-26": {
-    "lune": "Gibbeuse décroissante",
+    "lune": "Pleine Lune",
     "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-27": {
     "lune": "Gibbeuse décroissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-03-28": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-03-29": {
-    "lune": "Dernier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-30": {
-    "lune": "Dernier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-03-31": {
-    "lune": "Dernier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-04-01": {
-    "lune": "Dernier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-02": {
-    "lune": "Dernier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-04-03": {
-    "lune": "Dernier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-04-04": {
-    "lune": "Nouvelle Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-04-05": {
-    "lune": "Nouvelle Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-04-06": {
-    "lune": "Nouvelle Lune",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-07": {
     "lune": "Nouvelle Lune",
     "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-08": {
     "lune": "Premier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-04-09": {
-    "lune": "Premier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-04-10": {
-    "lune": "Premier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-11": {
-    "lune": "Premier croissant",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-04-12": {
-    "lune": "Premier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-04-13": {
-    "lune": "Premier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-14": {
-    "lune": "Premier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-04-15": {
-    "lune": "Premier quartier",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-04-16": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-17": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-18": {
     "lune": "Gibbeuse croissante",
-    "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-19": {
     "lune": "Pleine Lune",
     "signe": "Bélier",
-    "message": "Passe à l’action, c’est le moment de foncer."
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-04-20": {
-    "lune": "Pleine Lune",
+    "lune": "Gibbeuse décroissante",
     "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-04-21": {
-    "lune": "Pleine Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-22": {
-    "lune": "Pleine Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-23": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-24": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-04-25": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-04-26": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-04-27": {
-    "lune": "Dernier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-04-28": {
-    "lune": "Dernier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-04-29": {
     "lune": "Dernier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-04-30": {
     "lune": "Dernier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-01": {
-    "lune": "Dernier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-02": {
-    "lune": "Dernier croissant",
+    "lune": "Premier croissant",
     "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-05-03": {
-    "lune": "Nouvelle Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-04": {
-    "lune": "Nouvelle Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-05": {
-    "lune": "Nouvelle Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-06": {
-    "lune": "Nouvelle Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-07": {
-    "lune": "Premier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-05-08": {
-    "lune": "Premier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-05-09": {
-    "lune": "Premier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-10": {
     "lune": "Premier croissant",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-05-11": {
     "lune": "Premier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-05-12": {
-    "lune": "Premier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-05-13": {
-    "lune": "Premier quartier",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-05-14": {
-    "lune": "Premier quartier",
+    "lune": "Gibbeuse décroissante",
     "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-05-15": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-05-16": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-17": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-18": {
-    "lune": "Pleine Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-05-19": {
-    "lune": "Pleine Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-05-20": {
-    "lune": "Pleine Lune",
-    "signe": "Taureau",
-    "message": "Ralentis et trouve ton équilibre."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-05-21": {
     "lune": "Pleine Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-05-22": {
     "lune": "Gibbeuse décroissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-05-23": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-05-24": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-05-25": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-05-26": {
-    "lune": "Dernier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-05-27": {
-    "lune": "Dernier quartier",
+    "lune": "Premier quartier",
     "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-05-28": {
-    "lune": "Dernier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-05-29": {
-    "lune": "Dernier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-05-30": {
-    "lune": "Dernier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-05-31": {
-    "lune": "Dernier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-01": {
-    "lune": "Nouvelle Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-06-02": {
     "lune": "Nouvelle Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-06-03": {
-    "lune": "Nouvelle Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-06-04": {
-    "lune": "Nouvelle Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-05": {
-    "lune": "Premier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-06-06": {
-    "lune": "Premier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-07": {
-    "lune": "Premier croissant",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-06-08": {
-    "lune": "Premier croissant",
+    "lune": "Dernier quartier",
     "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-06-09": {
-    "lune": "Premier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-06-10": {
-    "lune": "Premier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-11": {
-    "lune": "Premier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-06-12": {
     "lune": "Premier quartier",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-13": {
     "lune": "Gibbeuse croissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-14": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-06-15": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-16": {
-    "lune": "Pleine Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-17": {
-    "lune": "Pleine Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-06-18": {
-    "lune": "Pleine Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-06-19": {
-    "lune": "Pleine Lune",
-    "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-06-20": {
-    "lune": "Gibbeuse décroissante",
+    "lune": "Premier quartier",
     "signe": "Gémeaux",
-    "message": "Exprime-toi, les idées circulent."
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-06-21": {
-    "lune": "Gibbeuse décroissante",
+    "lune": "Gibbeuse croissante",
     "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-06-22": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-23": {
     "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-06-24": {
     "lune": "Dernier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-06-25": {
-    "lune": "Dernier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-06-26": {
-    "lune": "Dernier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-27": {
-    "lune": "Dernier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-28": {
-    "lune": "Dernier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-06-29": {
-    "lune": "Dernier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-06-30": {
-    "lune": "Nouvelle Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-07-01": {
-    "lune": "Nouvelle Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-02": {
-    "lune": "Nouvelle Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-07-03": {
-    "lune": "Nouvelle Lune",
+    "lune": "Dernier croissant",
     "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-07-04": {
-    "lune": "Premier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-05": {
     "lune": "Premier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-06": {
-    "lune": "Premier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-07": {
-    "lune": "Premier croissant",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-08": {
-    "lune": "Premier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-07-09": {
-    "lune": "Premier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-10": {
-    "lune": "Premier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-11": {
-    "lune": "Premier quartier",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-12": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-07-13": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-14": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-15": {
-    "lune": "Pleine Lune",
+    "lune": "Gibbeuse croissante",
     "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-07-16": {
     "lune": "Pleine Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-17": {
-    "lune": "Pleine Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-18": {
-    "lune": "Pleine Lune",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-07-19": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-07-20": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-07-21": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-22": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Cancer",
-    "message": "Écoute ton cœur, sois bienveillant avec toi-même."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-07-23": {
-    "lune": "Dernier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-07-24": {
-    "lune": "Dernier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-07-25": {
-    "lune": "Dernier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-26": {
-    "lune": "Dernier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-07-27": {
     "lune": "Dernier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-07-28": {
-    "lune": "Dernier croissant",
+    "lune": "Nouvelle Lune",
     "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-07-29": {
-    "lune": "Nouvelle Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-07-30": {
-    "lune": "Nouvelle Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-07-31": {
-    "lune": "Nouvelle Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-08-01": {
-    "lune": "Nouvelle Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-02": {
-    "lune": "Premier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-03": {
-    "lune": "Premier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-08-04": {
-    "lune": "Premier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-08-05": {
-    "lune": "Premier croissant",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-08-06": {
-    "lune": "Premier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-08-07": {
     "lune": "Premier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-08-08": {
-    "lune": "Premier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-08-09": {
-    "lune": "Premier quartier",
+    "lune": "Pleine Lune",
     "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-08-10": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-11": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-08-12": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-08-13": {
-    "lune": "Pleine Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-08-14": {
-    "lune": "Pleine Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-08-15": {
-    "lune": "Pleine Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-16": {
-    "lune": "Pleine Lune",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-17": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-08-18": {
     "lune": "Gibbeuse décroissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-19": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-20": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-08-21": {
-    "lune": "Dernier quartier",
+    "lune": "Nouvelle Lune",
     "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-22": {
-    "lune": "Dernier quartier",
-    "signe": "Lion",
-    "message": "Brille avec confiance et exprime ta vérité."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-23": {
-    "lune": "Dernier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-24": {
-    "lune": "Dernier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-25": {
-    "lune": "Dernier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-26": {
-    "lune": "Dernier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-08-27": {
-    "lune": "Nouvelle Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-28": {
-    "lune": "Nouvelle Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-08-29": {
     "lune": "Nouvelle Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-08-30": {
-    "lune": "Nouvelle Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-08-31": {
-    "lune": "Premier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-01": {
-    "lune": "Premier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-09-02": {
-    "lune": "Premier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-03": {
-    "lune": "Premier croissant",
+    "lune": "Gibbeuse décroissante",
     "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-04": {
-    "lune": "Premier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-09-05": {
-    "lune": "Premier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-09-06": {
-    "lune": "Premier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-09-07": {
-    "lune": "Premier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-09-08": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-09-09": {
     "lune": "Gibbeuse croissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-09-10": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-09-11": {
-    "lune": "Pleine Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-12": {
-    "lune": "Pleine Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-13": {
-    "lune": "Pleine Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-14": {
-    "lune": "Pleine Lune",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-15": {
-    "lune": "Gibbeuse décroissante",
+    "lune": "Premier croissant",
     "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-09-16": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-09-17": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-09-18": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-09-19": {
-    "lune": "Dernier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-09-20": {
     "lune": "Dernier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-21": {
-    "lune": "Dernier quartier",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-22": {
-    "lune": "Dernier croissant",
-    "signe": "Vierge",
-    "message": "Prends soin des détails et de ton bien-être."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-23": {
-    "lune": "Dernier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-09-24": {
-    "lune": "Dernier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-09-25": {
-    "lune": "Nouvelle Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-09-26": {
-    "lune": "Nouvelle Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-09-27": {
-    "lune": "Nouvelle Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-28": {
-    "lune": "Nouvelle Lune",
+    "lune": "Dernier quartier",
     "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-09-29": {
-    "lune": "Premier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-09-30": {
-    "lune": "Premier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-01": {
     "lune": "Premier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-10-02": {
-    "lune": "Premier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-10-03": {
-    "lune": "Premier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-10-04": {
-    "lune": "Premier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-10-05": {
-    "lune": "Premier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-10-06": {
-    "lune": "Premier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-07": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-08": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-09": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-10": {
-    "lune": "Pleine Lune",
+    "lune": "Premier quartier",
     "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-11": {
-    "lune": "Pleine Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-12": {
     "lune": "Pleine Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-13": {
-    "lune": "Pleine Lune",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-14": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-15": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-16": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-10-17": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-18": {
-    "lune": "Dernier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-19": {
-    "lune": "Dernier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-20": {
-    "lune": "Dernier quartier",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-10-21": {
-    "lune": "Dernier croissant",
-    "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-22": {
-    "lune": "Dernier croissant",
+    "lune": "Dernier quartier",
     "signe": "Balance",
-    "message": "Cherche l’harmonie dans tes relations."
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-23": {
     "lune": "Dernier croissant",
     "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-10-24": {
     "lune": "Nouvelle Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-25": {
-    "lune": "Nouvelle Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-10-26": {
-    "lune": "Nouvelle Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-10-27": {
-    "lune": "Nouvelle Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-28": {
-    "lune": "Premier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-10-29": {
-    "lune": "Premier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-10-30": {
-    "lune": "Premier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-10-31": {
-    "lune": "Premier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-01": {
-    "lune": "Premier quartier",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-11-02": {
-    "lune": "Premier quartier",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-11-03": {
     "lune": "Premier quartier",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-04": {
-    "lune": "Premier quartier",
+    "lune": "Gibbeuse croissante",
     "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-05": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-11-06": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-07": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-11-08": {
-    "lune": "Pleine Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-09": {
-    "lune": "Pleine Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-11-10": {
-    "lune": "Pleine Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-11": {
-    "lune": "Pleine Lune",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-12": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-11-13": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-11-14": {
     "lune": "Gibbeuse décroissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-15": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-16": {
-    "lune": "Dernier quartier",
+    "lune": "Dernier croissant",
     "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-17": {
-    "lune": "Dernier quartier",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Nouvelle Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-18": {
-    "lune": "Dernier quartier",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-19": {
-    "lune": "Dernier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-11-20": {
-    "lune": "Dernier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-11-21": {
-    "lune": "Dernier croissant",
-    "signe": "Scorpion",
-    "message": "Explore tes émotions profondes."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-11-22": {
-    "lune": "Nouvelle Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-23": {
-    "lune": "Nouvelle Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-11-24": {
-    "lune": "Nouvelle Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier croissant",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-11-25": {
     "lune": "Nouvelle Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-26": {
     "lune": "Premier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-11-27": {
-    "lune": "Premier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-11-28": {
-    "lune": "Premier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-11-29": {
-    "lune": "Premier croissant",
+    "lune": "Pleine Lune",
     "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-11-30": {
-    "lune": "Premier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-01": {
-    "lune": "Premier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-02": {
-    "lune": "Premier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-03": {
-    "lune": "Premier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-04": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier croissant",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-05": {
-    "lune": "Gibbeuse croissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier quartier",
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-06": {
     "lune": "Gibbeuse croissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-12-07": {
     "lune": "Pleine Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-08": {
-    "lune": "Pleine Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-09": {
-    "lune": "Pleine Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-10": {
-    "lune": "Pleine Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Dernier croissant",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-11": {
-    "lune": "Gibbeuse décroissante",
+    "lune": "Nouvelle Lune",
     "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-12-12": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier croissant",
+    "signe": "Capricorne",
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-13": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-12-14": {
-    "lune": "Gibbeuse décroissante",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse croissante",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-15": {
-    "lune": "Dernier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Pleine Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-12-16": {
-    "lune": "Dernier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Gibbeuse décroissante",
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-17": {
     "lune": "Dernier quartier",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   },
   "2025-12-18": {
     "lune": "Dernier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-19": {
-    "lune": "Dernier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Nouvelle Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-12-20": {
-    "lune": "Dernier croissant",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier croissant",
+    "signe": "Vierge",
+    "message": "Prends soin des détails et de ton bien-être.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-21": {
-    "lune": "Nouvelle Lune",
-    "signe": "Sagittaire",
-    "message": "Ouvre-toi à l’aventure et à l’apprentissage."
+    "lune": "Premier quartier",
+    "signe": "Balance",
+    "message": "Cherche l’harmonie dans tes relations.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Lune en trigone à Mars",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-22": {
-    "lune": "Nouvelle Lune",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse croissante",
+    "signe": "Scorpion",
+    "message": "Explore tes émotions profondes.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-23": {
-    "lune": "Nouvelle Lune",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Pleine Lune",
+    "signe": "Sagittaire",
+    "message": "Ouvre-toi à l’aventure et à l’apprentissage.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Vénus sextile Neptune",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-24": {
-    "lune": "Nouvelle Lune",
+    "lune": "Gibbeuse décroissante",
     "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "message": "Responsabilité, structure et ambition.",
+    "element": "Terre",
+    "jour_favorable": "Prépare-toi à lâcher prise.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-25": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier quartier",
+    "signe": "Verseau",
+    "message": "Sors du cadre, ose l’originalité.",
+    "element": "Air",
+    "jour_favorable": "Fais le tri dans ce qui ne sert plus.",
+    "aspects_planetaires": [
+      "Saturne sextile Lune noire",
+      "Mars carré Jupiter"
+    ]
   },
   "2025-12-26": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Dernier croissant",
+    "signe": "Poissons",
+    "message": "Laisse parler ton intuition et ton imagination.",
+    "element": "Eau",
+    "jour_favorable": "Prends du recul pour mieux rebondir.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Vénus sextile Neptune"
+    ]
   },
   "2025-12-27": {
-    "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Nouvelle Lune",
+    "signe": "Bélier",
+    "message": "Passe à l’action, c’est le moment de foncer.",
+    "element": "Feu",
+    "jour_favorable": "Lance une intention claire.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-28": {
     "lune": "Premier croissant",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "signe": "Taureau",
+    "message": "Ralentis et trouve ton équilibre.",
+    "element": "Terre",
+    "jour_favorable": "Commence un petit projet ou une réflexion.",
+    "aspects_planetaires": [
+      "Mars carré Jupiter",
+      "Lune en trigone à Mars"
+    ]
   },
   "2025-12-29": {
     "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "signe": "Gémeaux",
+    "message": "Exprime-toi, les idées circulent.",
+    "element": "Air",
+    "jour_favorable": "Passe à l’action avec prudence.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Saturne sextile Lune noire"
+    ]
   },
   "2025-12-30": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Gibbeuse croissante",
+    "signe": "Cancer",
+    "message": "Écoute ton cœur, sois bienveillant avec toi-même.",
+    "element": "Eau",
+    "jour_favorable": "Affirme tes progrès, mais reste ouvert.",
+    "aspects_planetaires": [
+      "Mercure opposé Uranus",
+      "Soleil conjoint Pluton"
+    ]
   },
   "2025-12-31": {
-    "lune": "Premier quartier",
-    "signe": "Capricorne",
-    "message": "Responsabilité, structure et ambition."
+    "lune": "Pleine Lune",
+    "signe": "Lion",
+    "message": "Brille avec confiance et exprime ta vérité.",
+    "element": "Feu",
+    "jour_favorable": "Observe ce qui culmine ou se révèle.",
+    "aspects_planetaires": [
+      "Soleil conjoint Pluton",
+      "Mercure opposé Uranus"
+    ]
   }
 }

@@ -96,8 +96,8 @@ body {
 
 
 .count-buttons button:hover {
-  background: #3c9260;
-  color: #fff;
+  background: #c9c9c9;
+  color: #000000;
 }
 
 
@@ -348,7 +348,7 @@ body {
 
 
 .astro-display {
-  margin: 1.5rem auto 0;
+  margin: 0rem auto 0;
   padding: 0.5rem 1rem;
   max-width: 600px;
   background: none;

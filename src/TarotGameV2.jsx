@@ -217,16 +217,21 @@ function TarotGameV2() {
             </div>
           )}
 
+{astro && tab === 'tirage' && (
+  <div className="astro-display">
+    <h4>Contexte astrologique</h4>
+    <p>{astro.lune} en {astro.signe} ({astro.element})</p>
+    <p>— {astro.message}</p>
 
-          {astro && tab === 'tirage' && (
-            <div className="astro-display">
-              <h4>Contexte astrologique</h4>
-              <p>
-                {astro.lune} en {astro.signe}<br />
-                — {astro.message}
-              </p>
-            </div>
-          )}
+    {/* 💡 Interprétation personnalisée */}
+    <p><em>
+      {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
+      {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
+      {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
+      {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
+    </em></p>
+  </div>
+)}
 
 
           <div className="button-group">
