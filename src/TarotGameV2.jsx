@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
 
-
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", meaning: "Bon présage sentimental, bénéfique pour la carrière, propice à la méditation spirituelle." },
   { name: "La Papesse", image: "la_papesse.jpg", meaning: "Vie de couple sincère et durable, réussite professionnelle, évolution personnelle." },
@@ -29,7 +28,6 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", meaning: "Nouveau départ, grands changements de vie." }
 ];
 
-
 function TarotCard({ card, flipped, onClick }) {
   return (
     <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick} aria-label={`Carte de tarot : ${card.name}`}>
@@ -46,7 +44,6 @@ function TarotCard({ card, flipped, onClick }) {
   );
 }
 
-
 function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
@@ -54,16 +51,15 @@ function TarotGameV2() {
   const [tab, setTab] = useState('tirage');
   const [history, setHistory] = useState([]);
   const [loveName, setLoveName] = useState('');
- useEffect(() => {
-  if (tab === 'amour' && selectedCount !== 1 && selectedCount !== 3) {
-    setSelectedCount(3);
-  }
-}, [tab, selectedCount]);
 
+  useEffect(() => {
+    if (tab === 'amour' && selectedCount !== 1 && selectedCount !== 3) {
+      setSelectedCount(3);
+    }
+  }, [tab, selectedCount]);
 
   const today = new Date().toISOString().split('T')[0];
   const astro = astroData[today];
-
 
   useEffect(() => {
     const savedHistory = localStorage.getItem('tarotHistory');
@@ -72,13 +68,11 @@ function TarotGameV2() {
     }
   }, []);
 
-
   const drawCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, selectedCount);
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
-
 
     const newHistory = [
       ...history,
@@ -88,19 +82,16 @@ function TarotGameV2() {
     localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
 
-
   const toggleFlip = (index) => {
     const newFlipped = [...flipped];
     newFlipped[index] = !newFlipped[index];
     setFlipped(newFlipped);
   };
 
-
   const resetDraw = () => {
     setDrawnCards([]);
     setFlipped([]);
   };
-
 
   const drawLoveCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
@@ -113,17 +104,6 @@ function TarotGameV2() {
     setFlipped(new Array(selected.length).fill(false));
   };
 
-
-  const getStats = () => {
-    const allDraws = history.flatMap(entry => entry.cards.map(card => card.name));
-    const stats = allDraws.reduce((acc, name) => {
-      acc[name] = (acc[name] || 0) + 1;
-      return acc;
-    }, {});
-    return Object.entries(stats).sort((a, b) => b[1] - a[1]);
-  };
-
-
   return (
     <div className="tarot-app">
       <div className="header">
@@ -132,10 +112,8 @@ function TarotGameV2() {
           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); setDrawnCards([]); setFlipped([]); }}>Tirage</button>
           <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); setDrawnCards([]); setFlipped([]); }}>Tirage Amoureux</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
-          <button className={tab === 'stats' ? 'active' : ''} onClick={() => setTab('stats')}>Statistiques</button>
         </div>
       </div>
-
 
       {(tab === 'tirage' || tab === 'amour') && (
         <>
@@ -168,26 +146,22 @@ function TarotGameV2() {
             </>
           )}
 
-
           {tab === 'tirage' && (
             <div className="selection-section">
               <h2>Combien de cartes voulez-vous tirer ?</h2>
               <div className="count-buttons">
                 {[1, 2, 3, 4, 5].map((n) => (
-  <button
-    key={n}
-    onClick={() => setSelectedCount(n)}
-    className={n === selectedCount ? 'selected' : ''}
-  >
-    {n}
-  </button>
-))}
-
-
+                  <button
+                    key={n}
+                    onClick={() => setSelectedCount(n)}
+                    className={n === selectedCount ? 'selected' : ''}
+                  >
+                    {n}
+                  </button>
+                ))}
               </div>
             </div>
           )}
-
 
           <div className="cards-section">
             {drawnCards.length === 0 ? (
@@ -210,29 +184,25 @@ function TarotGameV2() {
             )}
           </div>
 
-
           {drawnCards.length > 0 && (
             <div className="reveal-status">
               {`${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
             </div>
           )}
 
-{astro && tab === 'tirage' && (
-  <div className="astro-display">
-    <h4>Contexte astrologique</h4>
-    <p>{astro.lune} en {astro.signe} ({astro.element})</p>
-    <p>— {astro.message}</p>
-
-    {/* 💡 Interprétation personnalisée */}
-    <p><em>
-      {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
-      {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
-      {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
-      {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
-    </em></p>
-  </div>
-)}
-
+          {astro && tab === 'tirage' && (
+            <div className="astro-display">
+              <h4>Contexte astrologique</h4>
+              <p>{astro.lune} en {astro.signe} ({astro.element})</p>
+              <p> {astro.message}</p>
+              <p><em>
+                {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
+                {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
+                {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
+                {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
+              </em></p>
+            </div>
+          )}
 
           <div className="button-group">
             <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>Réinitialiser</button>
@@ -245,7 +215,6 @@ function TarotGameV2() {
           </div>
         </>
       )}
-
 
       {tab === 'historique' && (
         <div className="history-section">
@@ -265,21 +234,8 @@ function TarotGameV2() {
           )}
         </div>
       )}
-
-
-      {tab === 'stats' && (
-        <div className="stats-section">
-          <h3>Cartes les plus souvent tirées</h3>
-          <ul>
-            {getStats().map(([name, count], i) => (
-              <li key={i}><strong>{name}</strong>: {count} fois</li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }
-
 
 export default TarotGameV2;
