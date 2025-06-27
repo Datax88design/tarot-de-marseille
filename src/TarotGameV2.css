@@ -259,7 +259,7 @@ body {
 
 .card-back {
   transform: rotateY(180deg);
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #333;
   text-align: center;
   display: flex;
@@ -279,7 +279,7 @@ body {
 .card-back strong {
   margin-bottom: 0.5rem;
   font-weight: bold;
-  min-height: 2.5rem; /* <-- fixe une hauteur minimale uniforme pour tous les titres */
+  min-height: 0.5rem; /* <-- fixe une hauteur minimale uniforme pour tous les titres */
   display: flex;
   align-items: center;
   justify-content: center;
