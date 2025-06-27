@@ -435,3 +435,57 @@ body {
     font-size: 1.1rem;
   }
 }
+.love-interpretations {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff3f8;
+  border: 1px solid #e89db3;
+  border-radius: 10px;
+  max-width: 90%;
+  text-align: left;
+}
+.love-interpretations h3 {
+  margin-bottom: 0.5rem;
+}
+.love-interpretations li {
+  margin-bottom: 0.5rem;
+}
+.love-summary {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.love-summary h3 {
+  font-size: 1.4rem;
+  color: #c2185b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.love-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.love-summary-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3a003a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.love-summary-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #8e004d;
+}
+
+

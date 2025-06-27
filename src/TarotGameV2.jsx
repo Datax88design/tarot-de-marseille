@@ -3,6 +3,39 @@ import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
 
+
+import interpretations from './data/interpretations_amour.json';
+
+function normalizeText(str) {
+  return str.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/’/g, "'");
+}
+
+function getLoveMeaning(cardName, partnerName) {
+  const found = interpretations.find(item =>
+    normalizeText(item.Arcane) === normalizeText(cardName)
+  );
+  if (!found) return `Aucune interprétation disponible pour ${cardName}.`;
+  return `Dans votre lien avec ${partnerName}, ${found["Interprétation Amoureuse"]}`;
+}
+
+function getLoveNarrative(cardName, partnerName) {
+  switch(cardName) {
+    case "Le Pendu":
+      return `🪢 Entre vous et ${partnerName}, il y a des non-dits ou des attentes prolongées. Le Pendu vous pousse à voir la relation sous un autre angle, avec patience et recul.`;
+    case "L'Hermite":
+      return `🕯️ ${partnerName} semble introspectif. Cette carte évoque une relation qui avance lentement mais avec maturité. Il est temps d’écouter vos silences.`;
+    case "Le Monde":
+      return `🌍 Une belle complétude vous unit à ${partnerName}. Le Monde parle d’une relation épanouie, presque karmique, où chacun trouve sa juste place.`;
+    case "L’Amoureux":
+      return `💘 Une attirance vive entre vous et ${partnerName}, mais aussi un besoin de clarifier un choix affectif. Cette carte parle d’hésitation… ou de passion naissante.`;
+    case "Le Diable":
+      return `🔥 Une connexion magnétique avec ${partnerName}. Le Diable évoque une forte tension sexuelle ou émotionnelle, mais attention aux jeux de pouvoir.`;
+    default:
+      return getLoveMeaning(cardName, partnerName);
+  }
+}
+
+
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", meaning: "Bon présage sentimental, bénéfique pour la carrière, propice à la méditation spirituelle." },
   { name: "La Papesse", image: "la_papesse.jpg", meaning: "Vie de couple sincère et durable, réussite professionnelle, évolution personnelle." },
@@ -16,7 +49,7 @@ const tarotCards = [
   { name: "La Roue de Fortune", image: "la_roue_de_fortune.jpg", meaning: "Changements soudains positifs ou négatifs, en amour et au travail." },
   { name: "La Force", image: "la_force.jpg", meaning: "Amour solide, foi dans le travail, maîtrise de soi." },
   { name: "Le Pendu", image: "le_pendu.jpg", meaning: "Relation peu sincère, discrétion au travail, patience." },
-  { name: "La Mort", image: "la_mort.jpg", meaning: "Séparation à venir, changement professionnel important." },
+  { name: "L'Arcane sans nom (XIII)", image: "la_mort.jpg", meaning: "Séparation à venir, changement professionnel important." },
   { name: "Tempérance", image: "temperance.jpg", meaning: "Équilibre parfait, harmonie dans le couple et au travail." },
   { name: "Le Diable", image: "le_diable.jpg", meaning: "Relations courtes, tensions et conflits, mauvaise communication." },
   { name: "La Maison Dieu", image: "la_maison_dieu.jpg", meaning: "Amour positif, mais rupture ou fin professionnelle." },
@@ -183,6 +216,21 @@ function TarotGameV2() {
               ))
             )}
           </div>
+{tab === 'amour' && drawnCards.length > 0 && (
+  <div className="love-summary">
+    <h3>💗 Résumé du tirage amoureux</h3>
+    <div className="love-summary-grid">
+      {drawnCards.map((card, idx) => (
+        <div key={idx} className="love-summary-card">
+          <h4>{card.name}</h4>
+          <p>{getLoveNarrative(card.name, loveName)}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+
 
           {drawnCards.length > 0 && (
             <div className="reveal-status">
