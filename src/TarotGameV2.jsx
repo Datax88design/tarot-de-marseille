@@ -58,6 +58,7 @@ const tarotCards = [
   { name: "Le Mat", image: "le_mat.jpg", meaning: "Nouveau départ, grands changements de vie." }
 ];
 
+
 function TarotCard({ card, flipped, onClick }) {
   return (
     <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick}>

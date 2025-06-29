@@ -204,10 +204,10 @@ body {
 
 
 .card {
-  flex: 1 1 120px;
-  max-width: 160px;
-  min-width: 80px;
-  height: 260px;
+  flex: 1 1 160px;
+  max-width: 200px;
+  min-width: 120px;
+  height: 320px;
   cursor: pointer;
   position: relative;
   transform-origin: center bottom;
@@ -457,7 +457,7 @@ body {
 .love-summary {
   margin-top: 0rem;
   padding: 1.5rem 1rem;
-  max-width: 500px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
@@ -533,7 +533,7 @@ body {
 }
 
 .hater-summary {
-  margin-top: 2rem;
+  margin-top: 0rem;
   padding: 1.5rem 1rem;
   max-width: 500px;
   margin-left: auto;
@@ -560,4 +560,5 @@ body {
   max-width: 240px;
   margin: 0 auto;
 }
+
 
