@@ -493,4 +493,71 @@ body {
   color: #8e004d;
 }
 
+/* === Styles Haters === */
+
+.haters-intro {
+  max-width: 600px;
+  margin: 0rem auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1srem;
+  color: #3a003a;
+}
+
+.haters-intro h2 {
+  margin-bottom: 1rem;
+  color: #5e005e;
+  font-size: 1.3rem;
+}
+
+.haters-intro p {
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.draw-button.hater {
+  background: #5e005e;
+}
+
+.draw-button.hater:hover {
+  background: #3a003a;
+}
+
+.reset-button.hater {
+  border-color: #5e005e;
+  color: #5e005e;
+}
+
+.reset-button.hater:hover {
+  background: #f8f1fa;
+}
+
+.hater-summary {
+  margin-top: 2rem;
+  padding: 1.5rem 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.hater-summary h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #5e005e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hater-summary-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3a003a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 240px;
+  margin: 0 auto;
+}
 

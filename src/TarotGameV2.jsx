@@ -1,10 +1,8 @@
-// VERSION AVEC CHOIX DE 1 OU 3 CARTES POUR LE TIRAGE AMOUREUX
 import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
-
-
 import interpretations from './data/interpretations_amour.json';
+import hatersData from './data/tarot_haters.json';
 
 function normalizeText(str) {
   return str.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/’/g, "'");
@@ -19,22 +17,21 @@ function getLoveMeaning(cardName, partnerName) {
 }
 
 function getLoveNarrative(cardName, partnerName) {
-  switch(cardName) {
+  switch (cardName) {
     case "Le Pendu":
-      return `🪢 Entre vous et ${partnerName}, il y a des non-dits ou des attentes prolongées. Le Pendu vous pousse à voir la relation sous un autre angle, avec patience et recul.`;
+      return `🪢 Entre vous et ${partnerName}, il y a des non-dits ou des attentes prolongées.`;
     case "L'Hermite":
-      return `🕯️ ${partnerName} semble introspectif. Cette carte évoque une relation qui avance lentement mais avec maturité. Il est temps d’écouter vos silences.`;
+      return `🕯️ ${partnerName} semble introspectif. Cette carte évoque une relation qui avance lentement.`;
     case "Le Monde":
-      return `🌍 Une belle complétude vous unit à ${partnerName}. Le Monde parle d’une relation épanouie, presque karmique, où chacun trouve sa juste place.`;
+      return `🌍 Une belle complétude vous unit à ${partnerName}.`;
     case "L’Amoureux":
-      return `💘 Une attirance vive entre vous et ${partnerName}, mais aussi un besoin de clarifier un choix affectif. Cette carte parle d’hésitation… ou de passion naissante.`;
+      return `💘 Une attirance vive entre vous et ${partnerName}, mais aussi un besoin de clarifier un choix.`;
     case "Le Diable":
-      return `🔥 Une connexion magnétique avec ${partnerName}. Le Diable évoque une forte tension sexuelle ou émotionnelle, mais attention aux jeux de pouvoir.`;
+      return `🔥 Une connexion magnétique avec ${partnerName}.`;
     default:
       return getLoveMeaning(cardName, partnerName);
   }
 }
-
 
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", meaning: "Bon présage sentimental, bénéfique pour la carrière, propice à la méditation spirituelle." },
@@ -63,14 +60,14 @@ const tarotCards = [
 
 function TarotCard({ card, flipped, onClick }) {
   return (
-    <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick} aria-label={`Carte de tarot : ${card.name}`}>
+    <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick}>
       <div className="card-inner">
         <div className="card-front">
-          <img src={`/Cartes/${card.image}`} alt={card.name} loading="lazy" />
+          <img src={`/Cartes/${card.image}`} alt={card.name} />
         </div>
         <div className="card-back">
           <strong>{card.name}</strong>
-          <p>{card.meaning}</p>
+          <p>{card.meaning || card.hater}</p>
         </div>
       </div>
     </div>
@@ -91,9 +88,6 @@ function TarotGameV2() {
     }
   }, [tab, selectedCount]);
 
-  const today = new Date().toISOString().split('T')[0];
-  const astro = astroData[today];
-
   useEffect(() => {
     const savedHistory = localStorage.getItem('tarotHistory');
     if (savedHistory) {
@@ -107,10 +101,7 @@ function TarotGameV2() {
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
 
-    const newHistory = [
-      ...history,
-      { date: new Date().toLocaleString(), cards: selected },
-    ];
+    const newHistory = [...history, { date: new Date().toLocaleString(), cards: selected }];
     setHistory(newHistory);
     localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
@@ -137,13 +128,29 @@ function TarotGameV2() {
     setFlipped(new Array(selected.length).fill(false));
   };
 
+  const drawHaterCard = () => {
+    const randomIndex = Math.floor(Math.random() * hatersData.length);
+    const selected = hatersData[randomIndex];
+    const fileName = normalizeText(selected.arcane).replace(/\s+/g, '_') + '.jpg';
+    setDrawnCards([{
+      name: selected.arcane,
+      image: fileName,
+      hater: selected.hater,
+      protection: selected.protection
+    }]);
+    setFlipped([false]);
+  };
+const today = new Date().toISOString().split('T')[0];
+const astro = astroData[today];
+
   return (
     <div className="tarot-app">
       <div className="header">
         <h1>Tarot</h1>
         <div className="tabs">
-          <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); setDrawnCards([]); setFlipped([]); }}>Tirage</button>
-          <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); setDrawnCards([]); setFlipped([]); }}>Tirage Amoureux</button>
+          <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
+          <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Tirage Amoureux</button>
+          <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
         </div>
       </div>
@@ -216,21 +223,20 @@ function TarotGameV2() {
               ))
             )}
           </div>
-{tab === 'amour' && drawnCards.length > 0 && (
-  <div className="love-summary">
-    <h3>💗 Résumé du tirage amoureux</h3>
-    <div className="love-summary-grid">
-      {drawnCards.map((card, idx) => (
-        <div key={idx} className="love-summary-card">
-          <h4>{card.name}</h4>
-          <p>{getLoveNarrative(card.name, loveName)}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
 
-
+          {tab === 'amour' && drawnCards.length > 0 && (
+            <div className="love-summary">
+              <h3>💗 Résumé du tirage amoureux</h3>
+              <div className="love-summary-grid">
+                {drawnCards.map((card, idx) => (
+                  <div key={idx} className="love-summary-card">
+                    <h4>{card.name}</h4>
+                    <p>{getLoveNarrative(card.name, loveName)}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {drawnCards.length > 0 && (
             <div className="reveal-status">
@@ -238,19 +244,20 @@ function TarotGameV2() {
             </div>
           )}
 
-          {astro && tab === 'tirage' && (
-            <div className="astro-display">
-              <h4>Contexte astrologique</h4>
-              <p>{astro.lune} en {astro.signe} ({astro.element})</p>
-              <p> {astro.message}</p>
-              <p><em>
-                {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
-                {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
-                {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
-                {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
-              </em></p>
-            </div>
-          )}
+        {astro && (
+  <div className="astro-display">
+    <h4>Contexte astrologique</h4>
+    <p>{astro.lune} en {astro.signe} ({astro.element})</p>
+    <p>{astro.message}</p>
+    <p><em>
+      {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
+      {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
+      {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
+      {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
+    </em></p>
+  </div>
+)}
+
 
           <div className="button-group">
             <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>Réinitialiser</button>
@@ -260,6 +267,50 @@ function TarotGameV2() {
             >
               Tirez les cartes
             </button>
+          </div>
+        </>
+      )}
+
+      {tab === 'haters' && (
+        <>
+          <div className="haters-intro">
+            <h2>Découvre ton Hater du moment</h2>
+            <p>
+              Nos “haters” peuvent être des peurs, des croyances limitantes, ou des influences toxiques.
+              <br /> Tire une carte pour révéler ton Hater.
+            </p>
+          </div>
+          <div className="cards-section">
+            {drawnCards.length === 0 ? (
+              <div className="card placeholder-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <p>Votre carte apparaîtra ici...</p>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              drawnCards.map((card, index) => (
+                <TarotCard
+                  key={index}
+                  card={card}
+                  flipped={flipped[index]}
+                  onClick={() => toggleFlip(index)}
+                />
+              ))
+            )}
+          </div>
+          {drawnCards.length > 0 && (
+            <div className="hater-summary">
+              <h3>😈 Conseil de protection</h3>
+              <div className="hater-summary-card">
+                <p>{drawnCards[0].protection}</p>
+              </div>
+            </div>
+          )}
+          <div className="button-group">
+            <button className="reset-button hater" onClick={resetDraw}>Réinitialiser</button>
+            <button className="draw-button hater" onClick={drawHaterCard}>Tirez votre carte Hater</button>
           </div>
         </>
       )}
@@ -274,7 +325,7 @@ function TarotGameV2() {
                 <h3>{entry.date}</h3>
                 <div className="cards-section">
                   {entry.cards.map((card, idx) => (
-                    <TarotCard key={idx} card={card} flipped={true} onClick={() => {}} />
+                    <TarotCard key={idx} card={card} flipped={true} onClick={() => { }} />
                   ))}
                 </div>
               </div>
