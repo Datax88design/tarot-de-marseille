@@ -374,8 +374,8 @@ body {
   border-radius: 6px;
   width: 90%;
   max-width: 300px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   outline: none;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -509,7 +509,7 @@ body {
   margin-bottom: 1rem;
   color: #5e005e;
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .haters-intro p {
@@ -574,7 +574,7 @@ h1 {
 
 /* ✅ Style général pour TOUS les h2 */
 h2 {
-  margin: 16px 0;
+  margin: 32px 0;
   font-size: 1.2rem;
 }
 
