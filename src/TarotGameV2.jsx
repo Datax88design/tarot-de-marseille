@@ -158,38 +158,39 @@ const astro = astroData[today];
 
       {(tab === 'tirage' || tab === 'amour') && (
         <>
-          {tab === 'amour' && (
-            <>
-              <div className="selection-section">
-                <h2>Avec qui souhaitez-vous faire un tirage ?</h2>
-                <input
-                  type="text"
-                  value={loveName}
-                  onChange={(e) => setLoveName(e.target.value)}
-                  placeholder="Prénom du partenaire"
-                  className="love-input"
-                />
-              </div>
-              <div className="selection-section">
-                <h2>Quel tirage souhaitez-vous ?</h2>
-                <div className="count-buttons love">
-                  {[1, 3].map((n) => (
-                    <button
-                      key={n}
-                      onClick={() => setSelectedCount(n)}
-                      className={n === selectedCount ? 'selected love' : ''}
-                    >
-                      {n}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </>
-          )}
+         {tab === 'amour' && (
+  <div className="amour-tab">
+    <div className="selection-section">
+      <h2>Avec qui souhaitez-vous faire un tirage ?</h2>
+      <input
+        type="text"
+        value={loveName}
+        onChange={(e) => setLoveName(e.target.value)}
+        placeholder="Prénom du partenaire"
+        className="love-input"
+      />
+    </div>
+
+    <div className="selection-section">
+      <h2>Quel tirage souhaitez-vous ?</h2>
+      <div className="count-buttons love">
+        {[1, 3].map((n) => (
+          <button
+            key={n}
+            onClick={() => setSelectedCount(n)}
+            className={n === selectedCount ? 'selected love' : ''}
+          >
+            {n}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
 
           {tab === 'tirage' && (
-            <div className="selection-section">
-              <h2>Combien de cartes voulez-vous tirer ?</h2>
+  <div className="tirage-tab">
+    <h2>Combien de cartes voulez-vous tirer ?</h2>
               <div className="count-buttons">
                 {[1, 2, 3, 4, 5].map((n) => (
                   <button
