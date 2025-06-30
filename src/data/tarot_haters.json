@@ -1,111 +1,133 @@
 [
   {
     "arcane": "Le Bateleur",
+    "image": "le_bateleur.jpg",
     "hater": "Ton éparpillement. Mille projets, zéro ancrage.",
     "protection": "Choisis UNE chose à finir avant d’en commencer une autre. La magie naît de la concentration."
   },
   {
     "arcane": "La Papesse",
+    "image": "la_papesse.jpg",
     "hater": "Ton silence, qui te coupe des autres.",
     "protection": "Confie-toi à une personne de confiance. La parole est un rituel de libération."
   },
   {
     "arcane": "L’Impératrice",
+    "image": "l_imperatrice.jpg",
     "hater": "Ton besoin de tout diriger, tout décider.",
     "protection": "Lâche prise sur ce que tu ne peux pas maîtriser. La créativité fleurit dans l’imprévu."
   },
   {
     "arcane": "L’Empereur",
+    "image": "le_empereur.jpg",
     "hater": "Tes règles trop strictes qui t’enferment.",
     "protection": "Accorde-toi une marge d’improvisation. La souplesse est une force cachée."
   },
   {
     "arcane": "Le Pape",
+    "image": "le_pape.jpg",
     "hater": "Tes croyances figées, tes peurs de mal faire.",
     "protection": "Écoute ton cœur avant les dogmes. La foi vivante est celle que tu nourris toi-même."
   },
   {
     "arcane": "L’Amoureux",
+    "image": "l_amoureux.jpg",
     "hater": "Tes choix sans fin qui bloquent ton élan.",
     "protection": "Tranche avec courage. Même une erreur te fait avancer."
   },
   {
     "arcane": "Le Chariot",
+    "image": "le_chariot.jpg",
     "hater": "Ton ambition qui écrase tes valeurs.",
     "protection": "Garde ton cap intérieur : avance, mais sans tout piétiner."
   },
   {
     "arcane": "La Justice",
+    "image": "la_justice.jpg",
     "hater": "Ta quête d’équité absolue, qui stérilise l’action.",
     "protection": "Accepte que tout ne sera pas parfait. L’équilibre se vit, il ne se décrète pas."
   },
   {
     "arcane": "L’Hermite",
+    "image": "l_hermite.jpg",
     "hater": "Ta solitude choisie qui devient prison.",
     "protection": "Rallume ta lanterne pour éclairer aussi les autres. Le savoir partagé est deux fois plus lumineux."
   },
   {
     "arcane": "La Roue de Fortune",
+    "image": "la_roue_de_fortune.jpg",
     "hater": "Ton “je n’ai pas de chance”, qui te laisse spectateur.",
     "protection": "Saisis ta part de contrôle. Pousse la roue, ne la subis pas."
   },
   {
     "arcane": "La Force",
+    "image": "la_force.jpg",
     "hater": "Ta fureur muette qui s’infiltre partout.",
     "protection": "Exprime ta colère de façon saine. Transforme-la en moteur, pas en poison."
   },
   {
     "arcane": "Le Pendu",
+    "image": "le_pendu.jpg",
     "hater": "Ta tendance à rester bloqué·e dans l’attente.",
     "protection": "Renverse ta vision puis bouge. L’action libère la stagnation."
   },
   {
     "arcane": "L’Arcane sans nom",
+    "image": "la_mort.jpg",
     "hater": "Ton refus de couper ce qui doit mourir.",
     "protection": "Accueille la mort symbolique. Chaque deuil est une mue vers ta renaissance."
   },
   {
     "arcane": "Tempérance",
+    "image": "temperance.jpg",
     "hater": "Ton excès de compromis qui éteint ta flamme.",
     "protection": "Ose dire non. Protéger ton feu intérieur est ton devoir sacré."
   },
   {
     "arcane": "Le Diable",
+    "image": "le_diable.jpg",
     "hater": "Tes dépendances et attachements toxiques.",
     "protection": "Identifie tes chaînes. Brise celles qui te tirent vers le bas, pas vers le plaisir sain."
   },
   {
     "arcane": "La Maison Dieu",
+    "image": "la_maison_dieu.jpg",
     "hater": "Ta peur de l’effondrement, même quand tout est bancal.",
     "protection": "Accepte la destruction créative. Après la foudre, la lumière se glisse partout."
   },
   {
     "arcane": "L’Étoile",
+    "image": "l_etoile.jpg",
     "hater": "Ton don de soi sans filtre qui attire les profiteurs.",
     "protection": "Reste généreux·se, mais place tes limites. Ta lumière mérite d’être respectée."
   },
   {
     "arcane": "La Lune",
+    "image": "la_lune.jpg",
     "hater": "Tes illusions qui brouillent ton intuition.",
     "protection": "Éclaire tes zones d’ombre avec discernement. Ta peur fond à la lumière."
   },
   {
     "arcane": "Le Soleil",
+    "image": "le_soleil.jpg",
     "hater": "Ton envie de briller comme les autres, pas comme toi.",
     "protection": "Célèbre ta propre lumière. Elle n’a pas besoin de comparaison."
   },
   {
     "arcane": "Le Jugement",
+    "image": "le_jugement.jpg",
     "hater": "Tes regrets et erreurs qui hantent tes pas.",
     "protection": "Pardonne-toi. Libère-toi du poids des morts pour renaître plus léger·e."
   },
   {
     "arcane": "Le Monde",
+    "image": "le_monde.jpg",
     "hater": "Ta quête de validation externe pour te sentir entier·ère.",
     "protection": "Tout est déjà en toi. Danse avec ton propre centre."
   },
   {
     "arcane": "Le Mat",
+    "image": "le_mat.jpg",
     "hater": "Ton goût du risque sans garde-fou.",
     "protection": "Garde ta liberté, mais vérifie où tu poses les pieds. L’insouciance n’est pas l’aveuglement."
   }

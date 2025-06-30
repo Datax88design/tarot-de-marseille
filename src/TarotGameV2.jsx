@@ -132,13 +132,13 @@ function TarotGameV2() {
   const drawHaterCard = () => {
     const randomIndex = Math.floor(Math.random() * hatersData.length);
     const selected = hatersData[randomIndex];
-    const fileName = normalizeText(selected.arcane).replace(/\s+/g, '_') + '.jpg';
-    setDrawnCards([{
-      name: selected.arcane,
-      image: fileName,
-      hater: selected.hater,
-      protection: selected.protection
-    }]);
+   const fileName = selected.image; // Chemin explicite
+  setDrawnCards([{
+  name: selected.arcane,
+  image: fileName,
+  hater: selected.hater,
+  protection: selected.protection
+}]);
     setFlipped([false]);
   };
 const today = new Date().toISOString().split('T')[0];
