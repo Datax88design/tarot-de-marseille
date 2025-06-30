@@ -150,7 +150,7 @@ const astro = astroData[today];
         <h1>Tarot</h1>
         <div className="tabs">
           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
-          <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Tirage Amoureux</button>
+          <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
           <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
         </div>
@@ -339,3 +339,4 @@ const astro = astroData[today];
 }
 
 export default TarotGameV2;
+
