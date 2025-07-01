@@ -280,13 +280,14 @@ const astro = astroData[today];
 
       {tab === 'haters' && (
         <>
-          <div className="haters-intro">
-            <h2>Découvre ton Hater du moment</h2>
-            <p>
-              Nos “haters” peuvent être des peurs, des croyances limitantes, ou des influences toxiques.
-              <br /> Tire une carte pour révéler ton Hater.
-            </p>
-          </div>
+         <div className="haters-intro">
+  <h2>Qui est ton Hater du moment ?</h2>
+  <p>
+    Un ex relou qui stalke, une peur sous le lit, un blocage que tu traînes en secret…<br />
+    Tire une carte, révèle ton poison, et choisis ton antidote.<br />
+    <strong>Brise la chaîne. Libère-toi. Ta clarté est ta magie.</strong>
+  </p>
+</div>
           <div className="cards-section">
             {drawnCards.length === 0 ? (
               <div className="card placeholder-card">
