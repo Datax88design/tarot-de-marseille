@@ -66,7 +66,7 @@ body {
 
 
 .selection-section h2 {
-  font-size: 1.3rem;
+  font-size: var(--font-large);
   font-weight: 0;
   color: #004d40;
   margin-top: 2rem;
@@ -508,7 +508,7 @@ body {
 .haters-intro h2 {
   margin-bottom: 1rem;
   color: #5e005e;
-  font-size: 1.3rem;
+  font-size: var(--font-large); /* plus de 1.3rem en dur ! */
   padding: 0rem;
 }
 
@@ -580,6 +580,7 @@ h2 {
 
 /* ✅ Style spécifique pour Tirage */
 .tirage-tab h2 {
+  font-size: var(--font-large);
   color: #004D40; /* Vert profond */
 }
 
