@@ -2,133 +2,155 @@
   {
     "arcane": "Le Bateleur",
     "image": "le_bateleur.jpg",
-    "hater": "Ton énergie file dans tous les sens, éparpillant tes forces sans résultat solide.",
-    "protection": "Ramène ton attention sur un seul projet essentiel. Termine-le avant d'enclencher le reste. Un magicien ne révèle sa puissance que concentrée."
+    "hater_meme": "Ta motivation du lundi matin : encore au café.",
+    "hater_serieux": "Ton énergie file dans tous les sens, éparpillant tes forces sans résultat solide.",
+    "protection": "Concentre-toi sur une seule chose. Termine-la avant d’en lancer une autre. Ta magie naît de ta discipline."
   },
   {
     "arcane": "La Papesse",
     "image": "la_papesse.jpg",
-    "hater": "Ton silence intérieur se transforme en isolement stérile.",
-    "protection": "Partage ce que tu caches, même par petites bribes. Chaque mot posé brise le mur du mutisme. La parole est un baume autant qu’un portail."
+    "hater_meme": "Ton pote fantôme qui lit tout mais répond jamais.",
+    "hater_serieux": "Ton silence intérieur se transforme en isolement stérile.",
+    "protection": "Exprime-toi, même un peu. Un mot ouvre un passage. La parole tisse tes liens vivants."
   },
   {
     "arcane": "L’Impératrice",
     "image": "l_imperatrice.jpg",
-    "hater": "Ton besoin de tout diriger devient un carcan étouffant.",
-    "protection": "Accepte de perdre un peu de contrôle. Laisse la vie improviser pour toi. La plus belle création naît parfois du chaos maîtrisé."
+    "hater_meme": "Ta Queen attitude qui planifie tout mais agit zéro.",
+    "hater_serieux": "Ton besoin de tout diriger devient un carcan étouffant.",
+    "protection": "Lâche un peu de contrôle. Laisse germer l’imprévu. C’est là que tes idées s’épanouissent."
   },
   {
     "arcane": "L’Empereur",
     "image": "le_empereur.jpg",
-    "hater": "Tes principes figés bloquent ton élan créatif.",
-    "protection": "Assouplis tes règles intérieures. Essaie un chemin que tu n’as jamais exploré. La solidité n’exclut pas la souplesse."
+    "hater_meme": "Ton côté control freak même sur tes potes.",
+    "hater_serieux": "Tes principes figés bloquent ton élan créatif.",
+    "protection": "Bouge tes lignes intérieures. Essaie un chemin hors du plan. La solidité se nourrit de souplesse."
   },
   {
     "arcane": "Le Pape",
     "image": "le_pape.jpg",
-    "hater": "Tes croyances anciennes te brident, t'empêchant de suivre ton intuition.",
-    "protection": "Remets en question ce que l’on t’a enseigné. Écoute ce qui vibre en toi. Ta propre foi est plus forte qu’un vieux dogme."
+    "hater_meme": "Tes « On a toujours fait comme ça ».",
+    "hater_serieux": "Tes croyances anciennes te brident, t'empêchant de suivre ton intuition.",
+    "protection": "Réinvente tes règles. Écoute ton cœur avant les dogmes. Ta vérité est plus vivante qu’un vieux script."
   },
   {
     "arcane": "L’Amoureux",
     "image": "l_amoureux.jpg",
-    "hater": "Ton indécision éternelle te fait perdre de précieuses opportunités.",
-    "protection": "Décide avec courage, même si le choix semble imparfait. Une direction claire libère ton énergie. L’hésitation prolongée est le pire poison de ton cœur."
+    "hater_meme": "Tes crushs qui squattent ton cerveau.",
+    "hater_serieux": "Ton indécision éternelle te fait perdre de précieuses opportunités.",
+    "protection": "Tranche, même mal. Le courage libère ton élan. L’hésitation prolongée est un poison."
   },
   {
     "arcane": "Le Chariot",
     "image": "le_chariot.jpg",
-    "hater": "Ton ambition sans frein t’isole ou te pousse à tout écraser.",
-    "protection": "Canalise ta vitesse : avance, mais sans piétiner tes valeurs. Conduis ton Chariot avec fierté et sagesse. Le triomphe n’est rien sans respect de soi."
+    "hater_meme": "Ton mode turbo qui finit dans le mur.",
+    "hater_serieux": "Ton ambition sans frein t’isole ou te pousse à tout écraser.",
+    "protection": "Canalise ton élan. Avance, mais sans piétiner l’essentiel. Le vrai succès respecte ton cœur."
   },
   {
     "arcane": "La Justice",
     "image": "la_justice.jpg",
-    "hater": "Ton besoin de tout équilibrer finit par figer tes actions.",
-    "protection": "Accepte qu’une balance vivante oscille toujours. Décide sans attendre la perfection. L’équilibre se façonne dans le mouvement."
+    "hater_meme": "Ton « c’est pas juste ! » bloquant tes plans.",
+    "hater_serieux": "Ton besoin de tout équilibrer finit par figer tes actions.",
+    "protection": "Bouge sans attendre l’équilibre parfait. L’équilibre existe dans l’action vivante."
   },
   {
     "arcane": "L’Hermite",
     "image": "l_hermite.jpg",
-    "hater": "Ta retraite volontaire se transforme en tour d’ivoire.",
-    "protection": "Partage ta lumière avec d’autres âmes en quête. Ta sagesse grandit en étant transmise. L’isolement prolongé éteint la lanterne."
+    "hater_meme": "Toi, sous un plaid, à ghoster le monde.",
+    "hater_serieux": "Ta retraite volontaire se transforme en tour d’ivoire.",
+    "protection": "Partage ta lumière, même vacillante. Elle éclaire plus loin qu’enfermée."
   },
   {
     "arcane": "La Roue de Fortune",
     "image": "la_roue_de_fortune.jpg",
-    "hater": "Ton fatalisme t’empêche de reprendre les rênes de ton destin.",
-    "protection": "Deviens acteur de tes rebonds. Agis pour faire tourner la roue, même un petit geste suffit. La chance n’aime pas l’immobilité."
+    "hater_meme": "« J’ai pas de chance, c’est ma life. »",
+    "hater_serieux": "Ton fatalisme t’empêche de reprendre les rênes de ton destin.",
+    "protection": "Secoue la roue, même un geste suffit. La chance aime ceux qui bougent."
   },
   {
     "arcane": "La Force",
     "image": "la_force.jpg",
-    "hater": "Ta colère mal contenue s’infiltre partout en poison invisible.",
-    "protection": "Exprime ce qui bout en toi avant qu’il ne te ronge. Mets cette énergie dans un acte créateur ou une parole ferme. La vraie force sait transformer la rage en courage."
+    "hater_meme": "Ta rage sortie au mauvais klaxon.",
+    "hater_serieux": "Ta colère mal contenue s’infiltre partout en poison invisible.",
+    "protection": "Crie, écris, libère. Transforme ta fureur en courage. La maîtrise est ta vraie puissance."
   },
   {
     "arcane": "Le Pendu",
     "image": "le_pendu.jpg",
-    "hater": "Ta manie de tout suspendre t’emprisonne dans l’inaction.",
-    "protection": "Accepte de lâcher une perspective devenue stérile. Bouge, même lentement. La vie récompense celui qui se décroche de ses peurs."
+    "hater_meme": "Ton art de tout remettre à demain.",
+    "hater_serieux": "Ta manie de tout suspendre t’emprisonne dans l’inaction.",
+    "protection": "Bouge, même petit pas. Chaque action coupe la corde du blocage."
   },
   {
     "arcane": "L’Arcane sans nom",
     "image": "la_mort.jpg",
-    "hater": "Ta peur du vide te pousse à t’accrocher à ce qui doit finir.",
-    "protection": "Laisse mourir ce qui ne respire plus. Chaque perte crée un espace de renaissance. Le vide est fertile pour celui qui ose."
+    "hater_meme": "Tes vieux trucs morts que tu refuses d’enterrer.",
+    "hater_serieux": "Ta peur du vide te pousse à t’accrocher à ce qui doit finir.",
+    "protection": "Laisse partir ce qui est fané. Le vide est le berceau du renouveau."
   },
   {
     "arcane": "Tempérance",
     "image": "temperance.jpg",
-    "hater": "Ton excès de compromis éteint ton feu sacré.",
-    "protection": "Remets des frontières autour de ton énergie. Dire non peut être un acte de guérison. L’harmonie vraie ne sacrifie pas ton essence."
+    "hater_meme": "Ton côté « Ça va » même quand c'est non.",
+    "hater_serieux": "Ton excès de compromis éteint ton feu sacré.",
+    "protection": "Affirme un vrai non. Ta paix intérieure est sacrée, protège-la."
   },
   {
     "arcane": "Le Diable",
     "image": "le_diable.jpg",
-    "hater": "Tes dépendances et attachements obscurs te dominent en secret.",
-    "protection": "Affronte tes pulsions sans honte. Garde ce qui nourrit ta joie saine. Brise les chaînes qui t’éloignent de toi-même."
+    "hater_meme": "Ton ex qui stalke tes stories.",
+    "hater_serieux": "Tes dépendances obscures te dominent en secret.",
+    "protection": "Coupe ces liens toxiques. Ta liberté vaut plus que de vieux poisons."
   },
   {
     "arcane": "La Maison Dieu",
     "image": "la_maison_dieu.jpg",
-    "hater": "Ta peur de l’effondrement te maintient dans une forteresse fissurée.",
-    "protection": "Laisse la foudre tomber où elle doit. Ce qui s’écroule libère un passage caché. Après le chaos, la clarté renaît."
+    "hater_meme": "Ton drama auto-créé juste pour pimenter.",
+    "hater_serieux": "Ta peur de l’effondrement te maintient dans une forteresse fissurée.",
+    "protection": "Laisse la tour tomber. Du chaos naît la clarté. Recommence sur du vrai."
   },
   {
     "arcane": "L’Étoile",
     "image": "l_etoile.jpg",
-    "hater": "Ta générosité sans limites attire ceux qui t’épuisent.",
-    "protection": "Apprends à filtrer tes dons. Partage ta lumière sans te vider. La source doit rester nourrie pour irriguer les autres."
+    "hater_meme": "Ton aura bisounours qui attire les sangsues.",
+    "hater_serieux": "Ta générosité sans limites attire ceux qui t’épuisent.",
+    "protection": "Partage sans te vider. Ta source mérite d’être nourrie aussi."
   },
   {
     "arcane": "La Lune",
     "image": "la_lune.jpg",
-    "hater": "Tes peurs amplifient tes illusions et paralysent ta confiance.",
-    "protection": "Explore tes ombres sans t’y perdre. Vérifie tes peurs, nomme-les à haute voix. La clarté dissout les mirages."
+    "hater_meme": "Tes films de minuit… gros flop au réveil.",
+    "hater_serieux": "Tes peurs amplifient tes illusions et paralysent ta confiance.",
+    "protection": "Éclaire tes ombres. Nommer tes peurs les fait fuir."
   },
   {
     "arcane": "Le Soleil",
     "image": "le_soleil.jpg",
-    "hater": "Ton envie de briller par comparaison éclipse ta lumière vraie.",
-    "protection": "Célèbre ta singularité sans regard de côté. Ta chaleur rayonne mieux sans jalousie. Offre ta joie sans attente d’écho."
+    "hater_meme": "Ton besoin de briller plus que lui.",
+    "hater_serieux": "Ton envie de briller par comparaison éclipse ta lumière vraie.",
+    "protection": "Brille pour toi. Ta lumière ne dépend de personne."
   },
   {
     "arcane": "Le Jugement",
     "image": "le_jugement.jpg",
-    "hater": "Tes vieux regrets t’alourdissent et étouffent ton renouveau.",
-    "protection": "Accorde-toi un pardon sincère. Laisse tes erreurs reposer en paix. Allège ton cœur pour accueillir la renaissance."
+    "hater_meme": "Tes regrets version playlist remix.",
+    "hater_serieux": "Tes vieux regrets t’alourdissent et étouffent ton renouveau.",
+    "protection": "Pardonne-toi. Relâche ce poids : ta renaissance t’attend."
   },
   {
     "arcane": "Le Monde",
     "image": "le_monde.jpg",
-    "hater": "Ton besoin de reconnaissance extérieure te détourne de ton centre.",
-    "protection": "Regarde ce qui est déjà accompli en toi. Danse avec ta propre complétude. Ta joie ne dépend pas du regard des autres."
+    "hater_meme": "Ta quête de likes pour exister.",
+    "hater_serieux": "Ton besoin de reconnaissance extérieure te détourne de ton centre.",
+    "protection": "Tout est déjà là : ton accomplissement n’a pas besoin d’applaudissements."
   },
   {
     "arcane": "Le Mat",
     "image": "le_mat.jpg",
-    "hater": "Ton goût du risque sans filet te met en danger inutilement.",
-    "protection": "Marche libre, mais reste attentif au sol. L’aventure est plus belle quand tu gardes l’équilibre. Préserve ta légèreté sans inconscience."
+    "hater_meme": "Ton mode YOLO sans casque.",
+    "hater_serieux": "Ton goût du risque sans filet te met en danger inutilement.",
+    "protection": "Avance, mais reste conscient de tes appuis. La liberté aime les limites saines."
   }
 ]

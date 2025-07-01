@@ -68,12 +68,17 @@ function TarotCard({ card, flipped, onClick }) {
         </div>
         <div className="card-back">
           <strong>{card.name}</strong>
-          <p>{card.meaning || card.hater}</p>
+          {card.hater_meme && <p className="hater-meme">{card.hater_meme}</p>}
+          {card.hater_serieux && <p className="hater-serieux">{card.hater_serieux}</p>}
+          {card.meaning && !card.hater_meme && !card.hater_serieux && (
+            <p>{card.meaning}</p>
+          )}
         </div>
       </div>
     </div>
   );
 }
+
 
 function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
@@ -129,18 +134,18 @@ function TarotGameV2() {
     setFlipped(new Array(selected.length).fill(false));
   };
 
-  const drawHaterCard = () => {
-    const randomIndex = Math.floor(Math.random() * hatersData.length);
-    const selected = hatersData[randomIndex];
-   const fileName = selected.image; // Chemin explicite
+const drawHaterCard = () => {
+  const randomIndex = Math.floor(Math.random() * hatersData.length);
+  const selected = hatersData[randomIndex];
   setDrawnCards([{
-  name: selected.arcane,
-  image: fileName,
-  hater: selected.hater,
-  protection: selected.protection
-}]);
-    setFlipped([false]);
-  };
+    name: selected.arcane,
+    image: selected.image,
+    hater_meme: selected.hater_meme,
+    hater_serieux: selected.hater_serieux,
+    protection: selected.protection
+  }]);
+  setFlipped([false]);
+};
 const today = new Date().toISOString().split('T')[0];
 const astro = astroData[today];
 
@@ -302,14 +307,15 @@ const astro = astroData[today];
               ))
             )}
           </div>
-          {drawnCards.length > 0 && (
-            <div className="hater-summary">
-              <h3>😈 Conseil de protection</h3>
-              <div className="hater-summary-card">
-                <p>{drawnCards[0].protection}</p>
-              </div>
-            </div>
-          )}
+        {drawnCards.length > 0 && (
+  <div className="hater-summary">
+    <h3>😈 Conseil de protection</h3>
+    <div className="hater-summary-card">
+      <p>{drawnCards[0].protection}</p>
+    </div>
+  </div>
+)}
+
           <div className="button-group">
             <button className="reset-button hater" onClick={resetDraw}>Réinitialiser</button>
             <button className="draw-button hater" onClick={drawHaterCard}>Tirez votre carte Hater</button>
