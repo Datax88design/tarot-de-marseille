@@ -34,15 +34,15 @@ body {
 
 
 .header h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
-  font-weight: 0
+  font-weight: bold
 }
 
 
 .tabs {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 
@@ -535,6 +535,7 @@ body {
 .haters-intro p {
   line-height: 1.6;
   max-width: 500px;
+  padding: 0.5rem;
 }
 
 .draw-button.hater {

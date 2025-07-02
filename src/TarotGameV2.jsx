@@ -152,7 +152,7 @@ const astro = astroData[today];
   return (
     <div className="tarot-app">
       <div className="header">
-        <h1>Tarot</h1>
+        <h1>Poison & Antidote</h1>
         <div className="tabs">
           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
           <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
