@@ -84,7 +84,7 @@ function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
-  const [tab, setTab] = useState('tirage');
+  const [tab, setTab] = useState('haters');
   const [history, setHistory] = useState([]);
   const [loveName, setLoveName] = useState('');
 
@@ -154,9 +154,9 @@ const astro = astroData[today];
       <div className="header">
         <h1>Poison & Antidote</h1>
         <div className="tabs">
-          <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
+         <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
           <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
-          <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
+           <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
         </div>
       </div>

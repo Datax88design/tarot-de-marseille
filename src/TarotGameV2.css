@@ -202,16 +202,29 @@ body {
   box-sizing: border-box;
 }
 
-
 .card {
   flex: 1 1 160px;
   max-width: 200px;
   min-width: 120px;
-  height: 320px;
+  height: 320px;  /* ✅ Hauteur fixe */
   cursor: pointer;
   position: relative;
   transform-origin: center bottom;
   transition: transform 0.3s ease;
+}
+
+.placeholder-card {
+  flex: 1 1 160px; /* ✅ même flex pour cohérence */
+  max-width: 200px;
+  min-width: 120px;
+  height: 320px;   /* ✅ Même hauteur que .card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
 }
 
 
