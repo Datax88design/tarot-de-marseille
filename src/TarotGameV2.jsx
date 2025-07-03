@@ -1,3 +1,4 @@
+import Home from './Home'; // si Home.jsx est dans le même dossier
 import React, { useState, useEffect } from 'react';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
@@ -54,7 +55,7 @@ const tarotCards = [
   { name: "La Lune", image: "la_lune.jpg", meaning: "Elle t’enveloppe de mystère et d’émotions troubles. La Lune évoque peurs, fantasmes, illusions : avance avec prudence. Écoute tes intuitions, mais vérifie tes mirages." },
   { name: "Le Soleil", image: "le_soleil.jpg", meaning: "Il brille sur toi. Joie, succès, relations sincères : le Soleil dissipe les ombres. Profite de sa chaleur, partage ta lumière sans réserve." },
   { name: "Le Jugement", image: "le_jugement.jpg", meaning: "Un réveil, une prise de conscience. Le Jugement t’appelle à renaître, à laisser derrière toi tes vieilles erreurs. C’est le moment d’ouvrir un nouveau chapitre." },
-  { name: "Le Monde", image: "le_monde.jpg", meaning: "Le Monde t’offre l’accomplissement et la reconnaissance. Tu termines un cycle en beauté. Tout s’aligne : savoure cette plénitude, elle t’ouvre vers d’autres horizons." },
+  { name: "Le Monde", image: "le_monde.jpg", meaning: "Le Monde t’offre l’accomplissementS et la reconnaissance. Tu termines un cycle en beauté. Tout s’aligne : savoure cette plénitude, elle t’ouvre vers d’autres horizons." },
   { name: "Le Mat", image: "le_mat.jpg", meaning: "Libre comme le vent, il avance sans bagages. Le Mat te pousse à tout quitter pour explorer de nouvelles terres. Marche sans carte : l’aventure est ta boussole." }
 ];
 
@@ -84,9 +85,10 @@ function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
-  const [tab, setTab] = useState('haters');
+  const [tab, setTab] = useState('home');
   const [history, setHistory] = useState([]);
   const [loveName, setLoveName] = useState('');
+  
 
   useEffect(() => {
     if (tab === 'amour' && selectedCount !== 1 && selectedCount !== 3) {
@@ -154,19 +156,22 @@ const astro = astroData[today];
       <div className="header">
         <h1>Poison & Antidote</h1>
         <div className="tabs">
+          <button className={tab === 'home' ? 'active' : ''} onClick={() => { setTab('home'); resetDraw(); }}>
+    Accueil</button>
          <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
           <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
            <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
           <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>Historique</button>
         </div>
       </div>
+  {tab === 'home' && <Home setTab={setTab} />}
 
       {(tab === 'tirage' || tab === 'amour') && (
         <>
          {tab === 'amour' && (
   <div className="amour-tab">
     <div className="selection-section">
-      <h2>Avec qui souhaitez-vous faire un tirage ?</h2>
+      <h2> Pour qui tires-tu ces cartes ?</h2>
       <input
         type="text"
         value={loveName}
@@ -177,7 +182,7 @@ const astro = astroData[today];
     </div>
 
     <div className="selection-section">
-      <h2>Quel tirage souhaitez-vous ?</h2>
+      <h2>Combien de cartes veux-tu révéler ?</h2>
       <div className="count-buttons love">
         {[1, 3].map((n) => (
           <button
@@ -195,7 +200,7 @@ const astro = astroData[today];
 
           {tab === 'tirage' && (
   <div className="tirage-tab">
-    <h2>Combien de cartes voulez-vous tirer ?</h2>
+    <h2>Combien de cartes veux-tu révéler ?</h2>
               <div className="count-buttons">
                 {[1, 2, 3, 4, 5].map((n) => (
                   <button
@@ -282,11 +287,6 @@ const astro = astroData[today];
         <>
          <div className="haters-intro">
   <h2>Qui est ton Hater du moment ?</h2>
-  <p>
-    Un ex relou qui stalke, une peur sous le lit, un blocage que tu traînes en secret…<br />
-    Tire une carte, révèle ton poison, et choisis ton antidote.<br />
-    <strong>Brise la chaîne. Libère-toi. Ta clarté est ta magie.</strong>
-  </p>
 </div>
           <div className="cards-section">
             {drawnCards.length === 0 ? (
