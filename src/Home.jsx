@@ -12,7 +12,6 @@ tes peurs et tes désirs. Découvre tes « Haters », fais un tirage libre,
 analyse tes relations amoureuses et choisis ton antidote.
 </p>
 
-
       </p>
 
       <h2>Choisis ton tirage </h2>
