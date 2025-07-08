@@ -653,7 +653,7 @@ body {
   justify-content: space-between;
   align-items: flex-start; /* le titre reste en haut */
   flex-wrap: wrap;         
-  gap: 1rem;               
+  gap: 0rem;               
   padding: 1rem 2rem;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
