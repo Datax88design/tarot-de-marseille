@@ -41,6 +41,13 @@ analyse tes relations amoureuses et choisis ton antidote.
           <p>Revois tes anciens tirages</p>
         </div>
       </div>
+
+      <div className="home-card" onClick={() => setTab('encyclopedie')}>
+  <div className="icon">📚</div>
+  <h3>Encyclopédie</h3>
+  <p>Découvre la signification des arcanes</p>
+</div>
+
     </div>
   );
 }
