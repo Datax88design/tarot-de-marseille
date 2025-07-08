@@ -598,58 +598,36 @@ body {
   margin: 0 auto;
 }
 
-/* ---- Styles globaux ---- */
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-/* ✅ Style général pour TOUS les h2 */
-h2 {
-  margin: 32px 0;
-  font-size: 1.2rem;
-}
-
-/* ✅ Style spécifique pour Tirage */
-.tirage-tab h2 {
-  font-size: var(--font-large);
-  color: #004D40; /* Vert profond */
-}
-
-/* ✅ Style spécifique pour Amour */
-.amour-tab h2 {
-  color: #C2185B; /* Rose passion */
-}
-
-/* ✅ Style spécifique pour Haters */
-.haters-tab h2 {
-  color: #6A1B9A; /* Violet Haters */
-}
-
+/* === Conteneur principal === */
 .encyclopedie-section {
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 2rem auto;   /* Centré avec marges verticales */
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 1rem;     /* Un peu de marge sur les côtés */
 }
 
+/* === Grille responsive === */
 .encyclopedie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  gap: 1.5rem; /* Espace entre les cartes */
   margin-top: 2rem;
 }
 
+/* === Carte individuelle === */
 .encyclopedie-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 1rem;
+  transition: transform 0.2s ease;
 }
 
+.encyclopedie-card:hover {
+  transform: translateY(-4px);
+}
+
+/* === Image dans la carte === */
 .encyclopedie-card img {
   width: 100%;
   height: auto;
@@ -657,11 +635,136 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+/* === Titres & textes === */
 .encyclopedie-card h3 {
   margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 .encyclopedie-card p {
   font-size: 0.9rem;
   color: #555;
+  line-height: 1.4;
+}
+
+/* === Header général === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* le titre reste en haut */
+  flex-wrap: wrap;         
+  gap: 1rem;               
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;   /* Passe en colonne sur mobile */
+    align-items: flex-start;  /* Garde le titre à gauche */
+  }
+}
+
+/* === Titre === */
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* === Wrapper avec flèches === */
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;          /* Important sur mobile */
+}
+
+/* === Container des tabs === */
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  max-width: 100%;      /* Évite de dépasser sur mobile */
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Flèches === */
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  user-select: none;
+}
+
+@media (min-width: 769px) {
+  .scroll-btn {
+    display: none; /* Masque les flèches sur desktop */
+  }
+}
+
+.scroll-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* === Boutons de tabs === */
+.tabs button {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.tabs button:hover {
+  background: #f0f0f0;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+/* === Titre de page harmonisé === */
+.page-title {
+  font-size: 1rem;     /* Taille identique sur toutes les pages */
+  font-weight: bold;     /* Gras pour bien marquer le titre */
+  margin-bottom: 1rem;   /* Espace en dessous */
+  text-align: center;    /* Centré, ajuste selon ton design */
+}
+.page-title + p {
+  margin-top: 0; /* Si un paragraphe suit directement le titre */
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;   /* Légèrement plus petit sur mobile */
+  }
+}
+
+/* === SECTIONS === */
+.selection-section,
+.cards-section,
+.history-section,
+.encyclopedie-section,
+.love-summary,
+.hater-summary {
+  margin-bottom: 2rem; /* même espace entre les blocs */
+}
+
+.love-summary-card,
+.history-entry {
+  margin-bottom: 1rem; /* espace cohérent entre sous-blocs */
 }

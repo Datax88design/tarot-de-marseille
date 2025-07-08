@@ -1,5 +1,5 @@
-import Home from './Home'; // si Home.jsx est dans le même dossier
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Home from './Home';
 import './TarotGameV2.css';
 import astroData from './data/astroData_2025.json';
 import interpretations from './data/interpretations_amour.json';
@@ -88,9 +88,22 @@ function TarotGameV2() {
   const [tab, setTab] = useState('home');
   const [history, setHistory] = useState([]);
   const [loveName, setLoveName] = useState('');
+
+  const today = new Date().toISOString().split('T')[0];
+  const astro = astroData[today];
+
+  const tabsRef = useRef(null);
+  const scrollTabs = (direction) => {
+    if (tabsRef.current) {
+      tabsRef.current.scrollBy({
+        left: direction * 100,
+        behavior: 'smooth',
+      });
+    }
+  };
   
 
-  useEffect(() => {
+ useEffect(() => {
     if (tab === 'amour' && selectedCount !== 1 && selectedCount !== 3) {
       setSelectedCount(3);
     }
@@ -114,17 +127,6 @@ function TarotGameV2() {
     localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
 
-  const toggleFlip = (index) => {
-    const newFlipped = [...flipped];
-    newFlipped[index] = !newFlipped[index];
-    setFlipped(newFlipped);
-  };
-
-  const resetDraw = () => {
-    setDrawnCards([]);
-    setFlipped([]);
-  };
-
   const drawLoveCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, selectedCount);
@@ -136,249 +138,249 @@ function TarotGameV2() {
     setFlipped(new Array(selected.length).fill(false));
   };
 
-const drawHaterCard = () => {
-  const randomIndex = Math.floor(Math.random() * hatersData.length);
-  const selected = hatersData[randomIndex];
-  setDrawnCards([{
-    name: selected.arcane,
-    image: selected.image,
-    hater_meme: selected.hater_meme,
-    hater_serieux: selected.hater_serieux,
-    protection: selected.protection
-  }]);
-  setFlipped([false]);
-};
-const today = new Date().toISOString().split('T')[0];
-const astro = astroData[today];
+  const drawHaterCard = () => {
+    const randomIndex = Math.floor(Math.random() * hatersData.length);
+    const selected = hatersData[randomIndex];
+    setDrawnCards([{
+      name: selected.arcane,
+      image: selected.image,
+      hater_meme: selected.hater_meme,
+      hater_serieux: selected.hater_serieux,
+      protection: selected.protection
+    }]);
+    setFlipped([false]);
+  };
 
-  return (
-  <div className="tarot-app">
-    <div className="header">
-      <h1>Poison & Antidote</h1>
-      <div className="tabs">
-        <button className={tab === 'home' ? 'active' : ''} onClick={() => { setTab('home'); resetDraw(); }}>
-          Accueil
-        </button>
-        <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>
-          Haters
-        </button>
-        <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>
-          Amour
-        </button>
-        <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>
-          Tirage
-        </button>
-        <button className={tab === 'historique' ? 'active' : ''} onClick={() => setTab('historique')}>
-          Historique
-        </button>
-        <button className={tab === 'encyclopedie' ? 'active' : ''} onClick={() => setTab('encyclopedie')}>
-          Encyclopédie
-        </button>
+  const toggleFlip = (index) => {
+    const newFlipped = [...flipped];
+    newFlipped[index] = !newFlipped[index];
+    setFlipped(newFlipped);
+  };
+
+  const resetDraw = () => {
+    setDrawnCards([]);
+    setFlipped([]);
+  };
+
+   return (
+    <div className="tarot-app">
+      <div className="header">
+        <h1>Poison & Antidote</h1>
+        <div className="tabs-wrapper">
+          <button className="scroll-btn left" onClick={() => scrollTabs(-1)}>‹</button>
+          <div ref={tabsRef} className="tabs">
+            <button className={tab === 'home' ? 'active' : ''} onClick={() => { setTab('home'); resetDraw(); }}>Accueil</button>
+            <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
+            <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
+            <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
+            <button className={tab === 'historique' ? 'active' : ''} onClick={() => { setTab('historique'); }}>Historique</button>
+            <button className={tab === 'encyclopedie' ? 'active' : ''} onClick={() => { setTab('encyclopedie'); }}>Encyclopédie</button>
+          </div>
+          <button className="scroll-btn right" onClick={() => scrollTabs(1)}>›</button>
+        </div>
       </div>
+
+      {tab === 'home' && <Home setTab={setTab} />}
+
+      {/* === Tirage & Amour === */}
+ {(tab === 'tirage' || tab === 'amour') && (
+  <>
+    {tab === 'amour' && (
+      <div className="amour-tab">
+        <div className="selection-section">
+          <h2 className="page-title">Pour qui tires-tu ces cartes ?</h2>
+          <input
+            type="text"
+            value={loveName}
+            onChange={(e) => setLoveName(e.target.value)}
+            placeholder="Prénom du partenaire"
+            className="love-input"
+          />
+        </div>
+
+        <div className="selection-section">
+          <h2 className="page-title">Combien de cartes veux-tu révéler ?</h2>
+          <div className="count-buttons love">
+            {[1, 3].map((n) => (
+              <button
+                key={n}
+                onClick={() => setSelectedCount(n)}
+                className={n === selectedCount ? 'selected love' : ''}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+
+    {tab === 'tirage' && (
+      <div className="tirage-tab">
+        <h2 className="page-title">Combien de cartes veux-tu révéler ?</h2>
+        <div className="count-buttons">
+          {[1, 2, 3, 4, 5].map((n) => (
+            <button
+              key={n}
+              onClick={() => setSelectedCount(n)}
+              className={n === selectedCount ? 'selected' : ''}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div className="cards-section">
+      {drawnCards.length === 0 ? (
+        <div className="card placeholder-card">
+          <div className="card-inner">
+            <div className="card-front">
+              <p>Vos cartes apparaîtront ici...</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        drawnCards.map((card, index) => (
+          <TarotCard
+            key={index}
+            card={card}
+            flipped={flipped[index]}
+            onClick={() => toggleFlip(index)}
+          />
+        ))
+      )}
     </div>
 
-    {/* === Accueil === */}
-    {tab === 'home' && <Home setTab={setTab} />}
-
-    {/* === Tirage & Amour === */}
-    {(tab === 'tirage' || tab === 'amour') && (
-      <>
-        {tab === 'amour' && (
-          <div className="amour-tab">
-            <div className="selection-section">
-              <h2>Pour qui tires-tu ces cartes ?</h2>
-              <input
-                type="text"
-                value={loveName}
-                onChange={(e) => setLoveName(e.target.value)}
-                placeholder="Prénom du partenaire"
-                className="love-input"
-              />
-            </div>
-
-            <div className="selection-section">
-              <h2>Combien de cartes veux-tu révéler ?</h2>
-              <div className="count-buttons love">
-                {[1, 3].map((n) => (
-                  <button
-                    key={n}
-                    onClick={() => setSelectedCount(n)}
-                    className={n === selectedCount ? 'selected love' : ''}
-                  >
-                    {n}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {tab === 'tirage' && (
-          <div className="tirage-tab">
-            <h2>Combien de cartes veux-tu révéler ?</h2>
-            <div className="count-buttons">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button
-                  key={n}
-                  onClick={() => setSelectedCount(n)}
-                  className={n === selectedCount ? 'selected' : ''}
-                >
-                  {n}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div className="cards-section">
-          {drawnCards.length === 0 ? (
-            <div className="card placeholder-card">
-              <div className="card-inner">
-                <div className="card-front">
-                  <p>Vos cartes apparaîtront ici...</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            drawnCards.map((card, index) => (
-              <TarotCard
-                key={index}
-                card={card}
-                flipped={flipped[index]}
-                onClick={() => toggleFlip(index)}
-              />
-            ))
-          )}
-        </div>
-
-        {tab === 'amour' && drawnCards.length > 0 && (
-          <div className="love-summary">
-            <h3>💗 Résumé du tirage amoureux</h3>
-            <div className="love-summary-grid">
-              {drawnCards.map((card, idx) => (
-                <div key={idx} className="love-summary-card">
-                  <h4>{card.name}</h4>
-                  <p>{getLoveNarrative(card.name, loveName)}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {drawnCards.length > 0 && (
-          <div className="reveal-status">
-            {`${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
-          </div>
-        )}
-
-        {astro && (
-          <div className="astro-display">
-            <h4>Contexte astrologique</h4>
-            <p>{astro.lune} en {astro.signe} ({astro.element})</p>
-            <p>{astro.message}</p>
-            <p><em>
-              {astro.element === 'Feu' && "Une journée idéale pour agir, prendre des initiatives et oser sortir de ta zone de confort."}
-              {astro.element === 'Terre' && "Reste ancré. Avance avec méthode et patience, surtout pour concrétiser tes projets."}
-              {astro.element === 'Air' && "Ouvre-toi au dialogue, à l’échange d’idées. Ta clarté mentale peut inspirer."}
-              {astro.element === 'Eau' && "Accueille tes émotions, développe ton intuition, prends soin de ton monde intérieur."}
-            </em></p>
-          </div>
-        )}
-
-        <div className="button-group">
-          <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>
-            Réinitialiser
-          </button>
-          <button
-            className={`draw-button ${tab === 'amour' ? 'love' : ''}`}
-            onClick={tab === 'tirage' ? drawCards : drawLoveCards}
-          >
-            Tirez les cartes
-          </button>
-        </div>
-      </>
-    )}
-
-    {/* === Haters === */}
-    {tab === 'haters' && (
-      <>
-        <div className="haters-intro">
-          <h2>Qui est ton Hater du moment ?</h2>
-        </div>
-        <div className="cards-section">
-          {drawnCards.length === 0 ? (
-            <div className="card placeholder-card">
-              <div className="card-inner">
-                <div className="card-front">
-                  <p>Votre carte apparaîtra ici...</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            drawnCards.map((card, index) => (
-              <TarotCard
-                key={index}
-                card={card}
-                flipped={flipped[index]}
-                onClick={() => toggleFlip(index)}
-              />
-            ))
-          )}
-        </div>
-        {drawnCards.length > 0 && (
-          <div className="hater-summary">
-            <h3>😈 Conseil de protection</h3>
-            <div className="hater-summary-card">
-              <p>{drawnCards[0].protection}</p>
-            </div>
-          </div>
-        )}
-        <div className="button-group">
-          <button className="reset-button hater" onClick={resetDraw}>Réinitialiser</button>
-          <button className="draw-button hater" onClick={drawHaterCard}>Tirez votre carte Hater</button>
-        </div>
-      </>
-    )}
-
-    {/* === Historique === */}
-    {tab === 'historique' && (
-      <div className="history-section">
-        {history.length === 0 ? (
-          <p>Aucun tirage encore enregistré.</p>
-        ) : (
-          history.map((entry, i) => (
-            <div key={i} className="history-entry">
-              <h3>{entry.date}</h3>
-              <div className="cards-section">
-                {entry.cards.map((card, idx) => (
-                  <TarotCard key={idx} card={card} flipped={true} onClick={() => {}} />
-                ))}
-              </div>
-            </div>
-          ))
-        )}
-      </div>
-    )}
-
-    {/* === Encyclopédie === */}
-    {tab === 'encyclopedie' && (
-      <div className="encyclopedie-section">
-        <h2>Encyclopédie du Tarot</h2>
-        <p>Explore chaque arcane majeur et découvre sa signification détaillée.</p>
-        <div className="encyclopedie-grid">
-          {tarotCards.map((card, index) => (
-            <div key={index} className="encyclopedie-card">
-              <img src={`/Cartes/${card.image}`} alt={card.name} />
-              <h3>{card.name}</h3>
-              <p>{card.meaning}</p>
+    {tab === 'amour' && drawnCards.length > 0 && (
+      <div className="love-summary">
+        <h3>💗 Résumé du tirage amoureux</h3>
+        <div className="love-summary-grid">
+          {drawnCards.map((card, idx) => (
+            <div key={idx} className="love-summary-card">
+              <h4>{card.name}</h4>
+              <p>{getLoveNarrative(card.name, loveName)}</p>
             </div>
           ))}
         </div>
       </div>
     )}
-  </div>
-);
-}
 
+    {drawnCards.length > 0 && (
+      <div className="reveal-status">
+        {`${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
+      </div>
+    )}
+
+    {astro && (
+      <div className="astro-display">
+        <h4>Contexte astrologique</h4>
+        <p>{astro.lune} en {astro.signe} ({astro.element})</p>
+        <p>{astro.message}</p>
+      </div>
+    )}
+
+    <div className="button-group">
+      <button
+        className={`reset-button ${tab === 'amour' ? 'love' : ''}`}
+        onClick={resetDraw}
+      >
+        Réinitialiser
+      </button>
+      <button
+        className={`draw-button ${tab === 'amour' ? 'love' : ''}`}
+        onClick={tab === 'tirage' ? drawCards : drawLoveCards}
+      >
+        Tirez les cartes
+      </button>
+    </div>
+  </>
+)}
+
+{/* === Haters === */}
+{tab === 'haters' && (
+  <>
+    <div className="haters-intro">
+      <h2 className="page-title">Qui est ton Hater du moment ?</h2>
+    </div>
+    <div className="cards-section">
+      {drawnCards.length === 0 ? (
+        <div className="card placeholder-card">
+          <div className="card-inner">
+            <div className="card-front">
+              <p>Votre carte apparaîtra ici...</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        drawnCards.map((card, index) => (
+          <TarotCard
+            key={index}
+            card={card}
+            flipped={flipped[index]}
+            onClick={() => toggleFlip(index)}
+          />
+        ))
+      )}
+    </div>
+    {drawnCards.length > 0 && (
+      <div className="hater-summary">
+        <h3>😈 Conseil de protection</h3>
+        <div className="hater-summary-card">
+          <p>{drawnCards[0].protection}</p>
+        </div>
+      </div>
+    )}
+    <div className="button-group">
+      <button className="reset-button hater" onClick={resetDraw}>
+        Réinitialiser
+      </button>
+      <button className="draw-button hater" onClick={drawHaterCard}>
+        Tirez votre carte Hater
+      </button>
+    </div>
+  </>
+)}
+
+{/* === Historique === */}
+{tab === 'historique' && (
+  <div className="history-section">
+    <h2 className="page-title">Historique de tes tirages</h2>
+    {history.length === 0 ? (
+      <p>Aucun tirage encore enregistré.</p>
+    ) : (
+      history.map((entry, i) => (
+        <div key={i} className="history-entry">
+          <h3>{entry.date}</h3>
+          <div className="cards-section">
+            {entry.cards.map((card, idx) => (
+              <TarotCard key={idx} card={card} flipped={true} onClick={() => {}} />
+            ))}
+          </div>
+        </div>
+      ))
+    )}
+  </div>
+)}
+
+{/* === Encyclopédie === */}
+{tab === 'encyclopedie' && (
+  <div className="encyclopedie-section">
+    <h2 className="page-title">Encyclopédie du Tarot</h2>
+    <p>Explore chaque arcane majeur et découvre sa signification détaillée.</p>
+    <div className="encyclopedie-grid">
+      {tarotCards.map((card, index) => (
+        <div key={index} className="encyclopedie-card">
+          <img src={`/Cartes/${card.image}`} alt={card.name} />
+          <p>{card.meaning}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+    </div>
+  );
+}
 
 export default TarotGameV2;
