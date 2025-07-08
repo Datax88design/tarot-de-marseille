@@ -183,12 +183,34 @@ function TarotGameV2() {
       {tab === 'home' && <Home setTab={setTab} />}
 
       {/* === Tirage & Amour === */}
- {(tab === 'tirage' || tab === 'amour') && (
-  <>
-    {tab === 'amour' && (
-      <div className="amour-tab">
+
+{(tab === 'tirage' || tab === 'amour') && (
+  <div className="section">
+    {tab === 'tirage' && (
+      <>
+        <h2 className="page-title">Tirage</h2>
         <div className="selection-section">
-          <h2 className="page-title">Pour qui tires-tu ces cartes ?</h2>
+          <h3>Combien de cartes veux-tu révéler ?</h3>
+          <div className="count-buttons">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <button
+                key={n}
+                onClick={() => setSelectedCount(n)}
+                className={n === selectedCount ? 'selected' : ''}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+      </>
+    )}
+
+    {tab === 'amour' && (
+      <>
+        <h2 className="page-title">Amour</h2>
+        <div className="selection-section">
+          <h3>Pour qui tires-tu ces cartes ?</h3>
           <input
             type="text"
             value={loveName}
@@ -197,9 +219,8 @@ function TarotGameV2() {
             className="love-input"
           />
         </div>
-
         <div className="selection-section">
-          <h2 className="page-title">Combien de cartes veux-tu révéler ?</h2>
+          <h3>Combien de cartes veux-tu révéler ?</h3>
           <div className="count-buttons love">
             {[1, 3].map((n) => (
               <button
@@ -212,24 +233,7 @@ function TarotGameV2() {
             ))}
           </div>
         </div>
-      </div>
-    )}
-
-    {tab === 'tirage' && (
-      <div className="tirage-tab">
-        <h2 className="page-title">Combien de cartes veux-tu révéler ?</h2>
-        <div className="count-buttons">
-          {[1, 2, 3, 4, 5].map((n) => (
-            <button
-              key={n}
-              onClick={() => setSelectedCount(n)}
-              className={n === selectedCount ? 'selected' : ''}
-            >
-              {n}
-            </button>
-          ))}
-        </div>
-      </div>
+      </>
     )}
 
     <div className="cards-section">
@@ -282,10 +286,7 @@ function TarotGameV2() {
     )}
 
     <div className="button-group">
-      <button
-        className={`reset-button ${tab === 'amour' ? 'love' : ''}`}
-        onClick={resetDraw}
-      >
+      <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>
         Réinitialiser
       </button>
       <button
@@ -295,15 +296,13 @@ function TarotGameV2() {
         Tirez les cartes
       </button>
     </div>
-  </>
+  </div>
 )}
 
-{/* === Haters === */}
 {tab === 'haters' && (
-  <>
-    <div className="haters-intro">
-      <h2 className="page-title">Qui est ton Hater du moment ?</h2>
-    </div>
+  <div className="section">
+    <h2 className="page-title">Haters</h2>
+    <p>Découvre ton hater du moment.</p>
     <div className="cards-section">
       {drawnCards.length === 0 ? (
         <div className="card placeholder-card">
@@ -340,13 +339,12 @@ function TarotGameV2() {
         Tirez votre carte Hater
       </button>
     </div>
-  </>
+  </div>
 )}
 
-{/* === Historique === */}
 {tab === 'historique' && (
-  <div className="history-section">
-    <h2 className="page-title">Historique de tes tirages</h2>
+  <div className="section">
+    <h2 className="page-title">Historique</h2>
     {history.length === 0 ? (
       <p>Aucun tirage encore enregistré.</p>
     ) : (
@@ -364,11 +362,10 @@ function TarotGameV2() {
   </div>
 )}
 
-{/* === Encyclopédie === */}
 {tab === 'encyclopedie' && (
-  <div className="encyclopedie-section">
-    <h2 className="page-title">Encyclopédie du Tarot</h2>
-    <p>Explore chaque arcane majeur et découvre sa signification détaillée.</p>
+  <div className="section">
+    <h2 className="page-title">Encyclopédie</h2>
+    <p>Explore chaque arcane et découvre sa signification.</p>
     <div className="encyclopedie-grid">
       {tarotCards.map((card, index) => (
         <div key={index} className="encyclopedie-card">
@@ -379,6 +376,7 @@ function TarotGameV2() {
     </div>
   </div>
 )}
+
     </div>
   );
 }

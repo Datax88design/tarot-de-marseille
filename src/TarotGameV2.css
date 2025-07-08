@@ -203,9 +203,9 @@ body {
 }
 
 .card {
-  flex: 1 1 160px;
+  flex: 1 1 200px;
   max-width: 200px;
-  min-width: 120px;
+  min-width: 180px;
   height: 320px;  /* ✅ Hauteur fixe */
   cursor: pointer;
   position: relative;
@@ -754,17 +754,280 @@ body {
   }
 }
 
-/* === SECTIONS === */
-.selection-section,
-.cards-section,
-.history-section,
-.encyclopedie-section,
+/* === new code pour le front === */
+:root {
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+  --content-max-width: 1100px;
+}
+
+/* === Corps === */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #212121;
+}
+
+.tarot-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Header === */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: var(--spacing-s) var(--spacing-l);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* === Wrapper tabs avec flèches === */
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-width: 100%;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs button {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.tabs button:hover {
+  background: #f0f0f0;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 769px) {
+  .scroll-btn {
+    display: none;
+  }
+}
+
+/* === Conteneur générique pour toutes les sections === */
+.section {
+  max-width: var(--content-max-width);
+  margin: var(--spacing-l) auto;
+  padding: 0 var(--spacing-s);
+  box-sizing: border-box;
+}
+
+/* === Titre de page harmonisé === */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 var(--spacing-m);
+  text-align: center;
+}
+
+.page-title + p {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* === Sections spécifiques === */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-s);
+  margin: var(--spacing-m) 0;
+  width: 100%;
+  padding: 0 var(--spacing-s);
+  overflow-x: auto;
+}
+
+.selection-section h2 {
+  font-size: 1.5rem;
+  margin: var(--spacing-m) 0 var(--spacing-s);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-m);
+  flex-wrap: wrap;
+}
+
+/* === Boutons tirage / reset === */
+.draw-button,
+.reset-button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.draw-button {
+  background: #007a33;
+  color: white;
+  border: none;
+}
+
+.draw-button:hover {
+  background: #005f26;
+}
+
+.reset-button {
+  background: white;
+  border: 2px solid #007a33;
+  color: #007a33;
+}
+
+.reset-button:hover {
+  background: #e8f5e9;
+  color: #005f26;
+}
+
+.love-input {
+  width: 90%;
+  max-width: 300px;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-top: var(--spacing-s);
+}
+
+/* === Résumés et interprétations === */
 .love-summary,
-.hater-summary {
-  margin-bottom: 2rem; /* même espace entre les blocs */
+.hater-summary,
+.stats-section {
+  padding: var(--spacing-m);
+  margin: var(--spacing-l) auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.love-summary h3,
+.hater-summary h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-s);
+}
+
+.love-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-s);
 }
 
 .love-summary-card,
+.hater-summary-card {
+  background: #fff;
+  padding: var(--spacing-s);
+  border-radius: 10px;
+}
+
+.astro-display {
+  margin: var(--spacing-m) auto;
+  max-width: 600px;
+  padding: var(--spacing-s);
+}
+
+/* === Historique === */
+.history-section {
+  padding: var(--spacing-m) var(--spacing-s);
+  margin: var(--spacing-l) auto;
+}
+
 .history-entry {
-  margin-bottom: 1rem; /* espace cohérent entre sous-blocs */
+  margin-bottom: var(--spacing-l);
+}
+
+/* === Encyclopédie === */
+.encyclopedie-section {
+  padding: var(--spacing-l) var(--spacing-s);
+  margin: var(--spacing-l) auto;
+  text-align: center;
+}
+
+.encyclopedie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-m);
+}
+
+.encyclopedie-card {
+  background: #fff;
+  padding: var(--spacing-s);
+  border-radius: 10px;
+}
+
+.encyclopedie-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .draw-button,
+  .reset-button {
+    width: 90%;
+  }
 }
