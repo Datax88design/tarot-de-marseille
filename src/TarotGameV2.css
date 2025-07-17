@@ -196,7 +196,6 @@ body {
   margin-top: 2rem;
   width: 100%;
   padding: 0 2vw 1rem;
-  overflow-x: auto;
   gap: 1rem;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -889,7 +888,6 @@ body {
   margin: var(--spacing-m) 0;
   width: 100%;
   padding: 0 var(--spacing-s);
-  overflow-x: auto;
 }
 
 .selection-section h2 {

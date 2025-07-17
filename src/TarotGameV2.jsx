@@ -173,8 +173,8 @@ function TarotGameV2() {
             <button className={tab === 'haters' ? 'active' : ''} onClick={() => { setTab('haters'); resetDraw(); }}>Haters</button>
             <button className={tab === 'amour' ? 'active' : ''} onClick={() => { setTab('amour'); resetDraw(); }}>Amour</button>
             <button className={tab === 'tirage' ? 'active' : ''} onClick={() => { setTab('tirage'); resetDraw(); }}>Tirage</button>
-            <button className={tab === 'historique' ? 'active' : ''} onClick={() => { setTab('historique'); }}>Historique</button>
             <button className={tab === 'encyclopedie' ? 'active' : ''} onClick={() => { setTab('encyclopedie'); }}>Encyclopédie</button>
+            <button className={tab === 'historique' ? 'active' : ''} onClick={() => { setTab('historique'); }}>Historique</button>
           </div>
           <button className="scroll-btn right" onClick={() => scrollTabs(1)}>›</button>
         </div>
@@ -342,6 +342,21 @@ function TarotGameV2() {
   </div>
 )}
 
+{tab === 'encyclopedie' && (
+  <div className="section">
+    <h2 className="page-title">Encyclopédie</h2>
+    <p>Explore chaque arcane et découvre sa signification.</p>
+    <div className="encyclopedie-grid">
+      {tarotCards.map((card, index) => (
+        <div key={index} className="encyclopedie-card">
+          <img src={`/Cartes/${card.image}`} alt={card.name} />
+          <p>{card.meaning}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
 {tab === 'historique' && (
   <div className="section">
     <h2 className="page-title">Historique</h2>
@@ -359,21 +374,6 @@ function TarotGameV2() {
         </div>
       ))
     )}
-  </div>
-)}
-
-{tab === 'encyclopedie' && (
-  <div className="section">
-    <h2 className="page-title">Encyclopédie</h2>
-    <p>Explore chaque arcane et découvre sa signification.</p>
-    <div className="encyclopedie-grid">
-      {tarotCards.map((card, index) => (
-        <div key={index} className="encyclopedie-card">
-          <img src={`/Cartes/${card.image}`} alt={card.name} />
-          <p>{card.meaning}</p>
-        </div>
-      ))}
-    </div>
   </div>
 )}
 
