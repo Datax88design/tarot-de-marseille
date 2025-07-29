@@ -5,9 +5,11 @@ import astroData from './data/astroData_2025.json';
 import interpretations from './data/interpretations_amour.json';
 import hatersData from './data/tarot_haters.json';
 
+
 function normalizeText(str) {
   return str.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/’/g, "'");
 }
+
 
 function getLoveMeaning(cardName, partnerName) {
   const found = interpretations.find(item =>
@@ -16,6 +18,7 @@ function getLoveMeaning(cardName, partnerName) {
   if (!found) return `Aucune interprétation disponible pour ${cardName}.`;
   return `Dans votre lien avec ${partnerName}, ${found["Interprétation Amoureuse"]}`;
 }
+
 
 function getLoveNarrative(cardName, partnerName) {
   switch (cardName) {
@@ -33,6 +36,7 @@ function getLoveNarrative(cardName, partnerName) {
       return getLoveMeaning(cardName, partnerName);
   }
 }
+
 
 const tarotCards = [
   { name: "Le Bateleur", image: "le_bateleur.jpg", meaning: "Tu tiens entre tes mains le pouvoir de commencer quelque chose de neuf. Ton potentiel est brut, prêt à jaillir dans le monde. Prends confiance : ta créativité te guidera là où tout reste possible." },
@@ -60,6 +64,8 @@ const tarotCards = [
 ];
 
 
+
+
 function TarotCard({ card, flipped, onClick }) {
   return (
     <div className={`card ${flipped ? 'flipped' : ''}`} onClick={onClick}>
@@ -81,6 +87,8 @@ function TarotCard({ card, flipped, onClick }) {
 }
 
 
+
+
 function TarotGameV2() {
   const [selectedCount, setSelectedCount] = useState(3);
   const [drawnCards, setDrawnCards] = useState([]);
@@ -89,8 +97,10 @@ function TarotGameV2() {
   const [history, setHistory] = useState([]);
   const [loveName, setLoveName] = useState('');
 
+
   const today = new Date().toISOString().split('T')[0];
   const astro = astroData[today];
+
 
   const tabsRef = useRef(null);
   const scrollTabs = (direction) => {
@@ -101,13 +111,15 @@ function TarotGameV2() {
       });
     }
   };
-  
+ 
+
 
  useEffect(() => {
     if (tab === 'amour' && selectedCount !== 1 && selectedCount !== 3) {
       setSelectedCount(3);
     }
   }, [tab, selectedCount]);
+
 
   useEffect(() => {
     const savedHistory = localStorage.getItem('tarotHistory');
@@ -116,16 +128,19 @@ function TarotGameV2() {
     }
   }, []);
 
+
   const drawCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
     const selected = shuffled.slice(0, selectedCount);
     setDrawnCards(selected);
     setFlipped(new Array(selected.length).fill(false));
 
+
     const newHistory = [...history, { date: new Date().toLocaleString(), cards: selected }];
     setHistory(newHistory);
     localStorage.setItem('tarotHistory', JSON.stringify(newHistory));
   };
+
 
   const drawLoveCards = () => {
     const shuffled = [...tarotCards].sort(() => 0.5 - Math.random());
@@ -137,6 +152,7 @@ function TarotGameV2() {
     setDrawnCards(personalized);
     setFlipped(new Array(selected.length).fill(false));
   };
+
 
   const drawHaterCard = () => {
     const randomIndex = Math.floor(Math.random() * hatersData.length);
@@ -151,16 +167,19 @@ function TarotGameV2() {
     setFlipped([false]);
   };
 
+
   const toggleFlip = (index) => {
     const newFlipped = [...flipped];
     newFlipped[index] = !newFlipped[index];
     setFlipped(newFlipped);
   };
 
+
   const resetDraw = () => {
     setDrawnCards([]);
     setFlipped([]);
   };
+
 
    return (
     <div className="tarot-app">
@@ -180,9 +199,12 @@ function TarotGameV2() {
         </div>
       </div>
 
+
       {tab === 'home' && <Home setTab={setTab} />}
 
+
       {/* === Tirage & Amour === */}
+
 
 {(tab === 'tirage' || tab === 'amour') && (
   <div className="section">
@@ -205,6 +227,7 @@ function TarotGameV2() {
         </div>
       </>
     )}
+
 
     {tab === 'amour' && (
       <>
@@ -236,6 +259,7 @@ function TarotGameV2() {
       </>
     )}
 
+
     <div className="cards-section">
       {drawnCards.length === 0 ? (
         <div className="card placeholder-card">
@@ -257,6 +281,7 @@ function TarotGameV2() {
       )}
     </div>
 
+
     {tab === 'amour' && drawnCards.length > 0 && (
       <div className="love-summary">
         <h3>💗 Résumé du tirage amoureux</h3>
@@ -271,11 +296,13 @@ function TarotGameV2() {
       </div>
     )}
 
+
     {drawnCards.length > 0 && (
       <div className="reveal-status">
         {`${flipped.filter(f => f).length}/${drawnCards.length} cartes révélées`}
       </div>
     )}
+
 
     {astro && (
       <div className="astro-display">
@@ -284,6 +311,7 @@ function TarotGameV2() {
         <p>{astro.message}</p>
       </div>
     )}
+
 
     <div className="button-group">
       <button className={`reset-button ${tab === 'amour' ? 'love' : ''}`} onClick={resetDraw}>
@@ -298,6 +326,7 @@ function TarotGameV2() {
     </div>
   </div>
 )}
+
 
 {tab === 'haters' && (
   <div className="section">
@@ -342,6 +371,7 @@ function TarotGameV2() {
   </div>
 )}
 
+
 {tab === 'encyclopedie' && (
   <div className="section">
     <h2 className="page-title">Encyclopédie</h2>
@@ -356,6 +386,7 @@ function TarotGameV2() {
     </div>
   </div>
 )}
+
 
 {tab === 'historique' && (
   <div className="section">
@@ -377,8 +408,11 @@ function TarotGameV2() {
   </div>
 )}
 
+
     </div>
   );
 }
 
+
 export default TarotGameV2;
+
